@@ -604,4 +604,4 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	killall "${app}" &> /dev/null
 done
 
-echo -e "Done."
+echo "        ... Done."

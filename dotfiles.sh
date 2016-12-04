@@ -65,13 +65,16 @@ fi
 # .profile or .bashrc
 if [ -f "$HOME/.profile" ]; then
 	export BASHRC="$HOME/.profile"
+	cp "$BASHRC" "$BASHRC.ORIG"
+elif [ -f "$HOME/.bashrc" ]; then
+	export BASHRC="$HOME/.bashrc"
+	cp "$BASHRC" "$BASHRC.ORIG"
 else
 	export BASHRC="$HOME/.bashrc"
 fi
 
 echo "    $BASHRC"
 
-cp "$BASHRC" "$BASHRC.ORIG"
 cat >> "$BASHRC" << EOF
 
 #
@@ -200,7 +203,7 @@ if [ -f /System/Library/CoreServices/SystemVersion.plist ]; then
 	echo 'export PATH="/opt/local/lib/mysql55/bin/:$PATH"' >> "$BASHRC"
 	
 	if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/dotfiles/master/macos.sh" -o "/tmp/macos.sh"; then
-		echo "    Set defaults for macOS (/tmp/macos.sh)... "
+		echo "    Set defaults for macOS (/tmp/macos.sh)..."
 		chmod +x "/tmp/macos.sh"
 		source "/tmp/macos.sh"
 		rm "/tmp/macos.sh"
