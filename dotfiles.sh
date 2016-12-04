@@ -198,6 +198,15 @@ if [ -f /System/Library/CoreServices/SystemVersion.plist ]; then
 	
 	# mysql from Macports
 	echo 'export PATH="/opt/local/lib/mysql55/bin/:$PATH"' >> "$BASHRC"
+	
+	if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/dotfiles/master/macos.sh" -o "/tmp/macos.sh"; then
+		echo "    Set defaults for macOS (/tmp/macos.sh)... "
+		chmod +x "/tmp/macos.sh"
+		source "/tmp/macos.sh"
+		rm "/tmp/macos.sh"
+	else
+		echo_warning "Failed to install 'macos.sh'"
+	fi
 fi
 
 
@@ -220,4 +229,4 @@ else
 fi
 
 
-echo "👍  Done"
+echo "👍  Done. Note that some of these changes require a logout/restart to take effect."
