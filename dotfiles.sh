@@ -146,10 +146,10 @@ fi
 # Scripts
 ################################################################################
 
-if [ -d "$HOME/Scipts" ]; then
-	echo "    $HOME/Scipts"
+if [ -d "$HOME/Scripts" ]; then
+	echo "    $HOME/Scripts"
 else
-	echo "    mkdir $HOME/Scipts"
+	echo "    mkdir $HOME/Scripts"
 	mkdir "$HOME/Scripts"
 fi
 
