@@ -193,6 +193,16 @@ if [ -f /System/Library/CoreServices/SystemVersion.plist ]; then
 		echo_warning "Failed to install 'shpotify.sh'"
 	fi
 	
+	
+	# Show all files in Finder
+	if $FETCHER "https://raw.githubusercontent.com/hnarayanan/dotfiles/master/showallfiles.sh" -o "$HOME/Scripts/showallfiles.sh"; then
+		echo "    $HOME/Scripts/showallfiles.sh"
+		chmod +x "$HOME/Scripts/showallfiles.sh"
+		echo "alias showallfiles='~/Scripts/showallfiles.sh'" >> "$BASHRC"
+	else
+		echo_warning "Failed to install 'showallfiles.sh'"
+	fi
+	
 	# mysql from Macports
 	echo 'export PATH="/opt/local/lib/mysql55/bin/:$PATH"' >> "$BASHRC"
 	
