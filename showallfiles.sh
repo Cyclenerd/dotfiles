@@ -8,10 +8,10 @@ function usage {
 	exit "$returnCode"
 }
 
-if [ "$1" == 'yes' ]; then
+if [ "$1" == 'yes' ] || [ "$1" == 'YES' ]; then
 	defaults write com.apple.finder AppleShowAllFiles YES
 	killall "Finder"
-elif [ "$1" == 'no' ]; then
+elif [ "$1" == 'no' ] || [ "$1" == 'NO' ]; then
 	defaults write com.apple.finder AppleShowAllFiles NO
 	killall "Finder"
 else
