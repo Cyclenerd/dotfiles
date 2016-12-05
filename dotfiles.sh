@@ -62,42 +62,36 @@ fi
 # bashrc
 ################################################################################
 
-# .profile or .bashrc
+# Backup
 if [ -f "$HOME/.profile" ]; then
-	export BASHRC="$HOME/.profile"
-	cp "$BASHRC" "$BASHRC.ORIG"
-elif [ -f "$HOME/.bashrc" ]; then
-	export BASHRC="$HOME/.bashrc"
-	cp "$BASHRC" "$BASHRC.ORIG"
-else
-	export BASHRC="$HOME/.bashrc"
+	cp "$HOME/.profile" "$HOME/.profile.ORIG"
+fi
+if [ -f "$HOME/.bashrc" ]; then
+	cp "$HOME/.bashrc" "$HOME/.bashrc.ORIG"
 fi
 
-echo "    $BASHRC"
+# .profile
+if ! grep "bashrc" "$HOME/.profilee" >> /dev/null 2>&1; then
+	echo "" >> "$HOME/.profile"
+	if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/dotfiles/master/profile" >> "$HOME/.profile"; then
+		echo "    $HOME/.profile"
+		echo "" >> "$HOME/.profile"
+	else
+		echo_warning "Failed to install '.profile'"
+	fi
+fi
 
-cat >> "$BASHRC" << EOF
+# .bashrc
+BASHRC="$HOME/.bashrc"
+echo "" >> "$BASHRC"
+if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/dotfiles/master/bashrc" >> "$BASHRC"; then
+	echo "    $BASHRC"
+	echo "" >> "$BASHRC"
+else
+	echo_warning "Failed to install '.bashrc'"
+fi
 
-#
-# Added by dotfile.sh script
-#   https://github.com/Cyclenerd/dotfiles
-#
-
-PS1='\[\033[01;32m\]\u@\h \[\033[01;34m\]\W \$ \[\033[00m\]'; export PS1
-
-alias gallery='~/Scripts/gallery.sh'
-alias veloheroup='~/Scripts/veloheroup'
-alias volume='~/Scripts/volume.sh'
-alias brightness='~/Scripts/brightness.sh'
-
-# Define nano as our default EDITOR
-export EDITOR='nano'
-
-export LC_CTYPE='en_US.UTF-8'
-export LC_ALL='en_US.UTF-8'
-
-EOF
-
-# BSD or GNU
+# ls in color
 if stat --version &>/dev/null; then
 	# GNU
 	echo "alias ll='ls -lah --color'" >> "$BASHRC"
@@ -205,6 +199,7 @@ if [ -f /System/Library/CoreServices/SystemVersion.plist ]; then
 	if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/dotfiles/master/macos.sh" -o "/tmp/macos.sh"; then
 		echo "    Set defaults for macOS (/tmp/macos.sh)..."
 		chmod +x "/tmp/macos.sh"
+		# shellcheck disable=SC1091
 		source "/tmp/macos.sh"
 		rm "/tmp/macos.sh"
 	else
