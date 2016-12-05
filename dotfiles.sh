@@ -195,7 +195,7 @@ if [ -f /System/Library/CoreServices/SystemVersion.plist ]; then
 	
 	
 	# Show all files in Finder
-	if $FETCHER "https://raw.githubusercontent.com/hnarayanan/dotfiles/master/showallfiles.sh" -o "$HOME/Scripts/showallfiles.sh"; then
+	if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/dotfiles/master/showallfiles.sh" -o "$HOME/Scripts/showallfiles.sh"; then
 		echo "    $HOME/Scripts/showallfiles.sh"
 		chmod +x "$HOME/Scripts/showallfiles.sh"
 		echo "alias showallfiles='~/Scripts/showallfiles.sh'" >> "$BASHRC"
