@@ -150,6 +150,13 @@ else
 	mkdir "$HOME/Scripts"
 fi
 
+if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/dotfiles/master/drobo.sh" -o "$HOME/Scripts/drobo.sh"; then
+	echo "    $HOME/Scripts/drobo.sh"
+	chmod +x "$HOME/Scripts/drobo.sh"
+else
+	echo_warning "Failed to install 'drobo.sh'"
+fi
+
 if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/gallery_shell/master/gallery.sh" -o "$HOME/Scripts/gallery.sh"; then
 	echo "    $HOME/Scripts/gallery.sh"
 	chmod +x "$HOME/Scripts/gallery.sh"

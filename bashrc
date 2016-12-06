@@ -12,7 +12,7 @@ else
 	export PS1
 fi
 
-
+alias drobo='~/Scripts/drobo.sh'
 alias gallery='~/Scripts/gallery.sh'
 alias veloheroup='~/Scripts/veloheroup'
 alias volume='~/Scripts/volume.sh'
