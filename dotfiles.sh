@@ -232,14 +232,22 @@ fi
 if [ -f "$HOME/.ssh/id_rsa" ]; then
 	echo "    SSH key already exists, will not generate new ones"
 else
-	mkdir "$HOME/.ssh"
-	echo -e 'y\n'|ssh-keygen -q -t rsa -b 4096 -f "$HOME/.ssh/id_rsa" -N ""
-	if [ "$?" -ne 0 ]; then
-		echo_warning "Failed to generate SSH key"
+	if [ -d "$HOME/.ssh" ]; then
+		echo "    '$HOME/.ssh' already exists"
 	else
-		chmod 700 "$HOME/.ssh"
-		chmod 600 "$HOME/.ssh/id_rsa"
-		echo "    $HOME/.ssh/id_rsa"
+		mkdir "$HOME/.ssh"
+	fi
+	if command_exists ssh-keygen; then
+		echo -e 'y\n'|ssh-keygen -q -t rsa -b 4096 -f "$HOME/.ssh/id_rsa" -N ""
+		if [ "$?" -ne 0 ]; then
+			echo_warning "Failed to generate SSH key"
+		else
+			chmod 700 "$HOME/.ssh"
+			chmod 600 "$HOME/.ssh/id_rsa"
+			echo "    $HOME/.ssh/id_rsa"
+		fi
+	else
+		echo_warning "'ssh-keygen' is needed"
 	fi
 fi
 
