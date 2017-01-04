@@ -71,14 +71,12 @@ if [ -f "$HOME/.bashrc" ]; then
 fi
 
 # .profile
-if ! grep "bashrc" "$HOME/.profilee" >> /dev/null 2>&1; then
+echo "" >> "$HOME/.profile"
+if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/dotfiles/master/profile" >> "$HOME/.profile"; then
+	echo "    $HOME/.profile"
 	echo "" >> "$HOME/.profile"
-	if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/dotfiles/master/profile" >> "$HOME/.profile"; then
-		echo "    $HOME/.profile"
-		echo "" >> "$HOME/.profile"
-	else
-		echo_warning "Failed to install '.profile'"
-	fi
+else
+	echo_warning "Failed to install '.profile'"
 fi
 
 # .bashrc
