@@ -64,7 +64,7 @@ for MY_SHARE in "${MY_SHARES[@]}"; do
 	if [[ "$MY_SHARE" == "$1" ]]; then
 		if command_exists osascript; then
 			# macOS
-			osascript -e "try" -e "mount volume \"smb://$MY_USERNAME@$MY_NAS/$MY_SHARE\"" -e "end try"
+			osascript -e "try" -e "mount volume \"afp://$MY_NAS/$MY_SHARE\"  as user name \"$MY_USERNAME\"" -e "end try"
 		elif command_exists gvfs-mount; then
 			# Linux (package 'gvfs-smb' needed)
 			gvfs-mount "smb://$MY_USERNAME@$MY_NAS/$MY_SHARE"
