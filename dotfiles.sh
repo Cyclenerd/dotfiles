@@ -180,7 +180,6 @@ else
 	echo_warning "Failed to install 'veloheroup'"
 fi
 
-
 ################################################################################
 # macOS only
 ################################################################################
@@ -243,6 +242,17 @@ else
 		fi
 	else
 		echo_warning "'ssh-keygen' is needed"
+	fi
+fi
+
+if [ -f "$HOME/.ssh/config" ]; then
+	echo "    '$HOME/.ssh/config' already exists"
+else
+	if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/dotfiles/master/sshconfig" -o "$HOME/.ssh/config"; then
+		chmod 600 "$HOME/.ssh/config"
+		echo "    $HOME/.ssh/config"
+	else
+		echo_warning "Failed to install SSH config"
 	fi
 fi
 
