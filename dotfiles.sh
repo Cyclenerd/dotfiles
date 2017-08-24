@@ -180,20 +180,6 @@ else
 	echo_warning "Failed to install 'veloheroup'"
 fi
 
-if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/volume_shell/master/volume.sh" -o "$HOME/Scripts/volume.sh"; then
-	echo "    $HOME/Scripts/volume.sh"
-	chmod +x "$HOME/Scripts/volume.sh"
-else
-	echo_warning "Failed to install 'volume.sh'"
-fi
-
-if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/brightness_shell/master/brightness.sh" -o "$HOME/Scripts/brightness.sh"; then
-	echo "    $HOME/Scripts/brightness.sh"
-	chmod +x "$HOME/Scripts/brightness.sh"
-else
-	echo_warning "Failed to install 'brightness.sh'"
-fi
-
 
 ################################################################################
 # macOS only
