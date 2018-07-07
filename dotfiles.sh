@@ -147,6 +147,16 @@ else
 	echo_warning "Failed to install '.gitconfig'"
 fi
 
+################################################################################
+# Create a global .gitignore
+################################################################################
+
+if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/dotfiles/master/gitignore_global" -o "$HOME/.gitignore_global"; then
+	echo "    $HOME/.gitignore_global"
+else
+	echo_warning "Failed to install '.gitignore_global'"
+fi
+
 
 ################################################################################
 # Scripts
