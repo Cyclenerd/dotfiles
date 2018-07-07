@@ -159,6 +159,18 @@ fi
 
 
 ################################################################################
+# Visual Studio Code setting.json
+################################################################################
+if [ -d "$HOME/Library/Application Support/Code/User" ]; then
+	if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/dotfiles/master/vscode.json" -o "$HOME/Library/Application Support/Code/User/settings.json"; then
+		echo "    $HOME/Library/Application Support/Code/User/settings.json"
+	else
+		echo_warning "Failed to install Visual Studio Code 'settings.json'"
+	fi
+fi
+
+
+################################################################################
 # Scripts
 ################################################################################
 

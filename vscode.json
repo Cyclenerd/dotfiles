@@ -1,0 +1,9 @@
+{
+    "telemetry.enableTelemetry": false,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "editor.fontSize": 18,
+    "editor.fontFamily": "'Source Code Pro', Monaco, 'Courier New', monospace",
+    "workbench.colorTheme": "Monokai",
+}
