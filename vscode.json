@@ -6,4 +6,12 @@
     "editor.fontSize": 18,
     "editor.fontFamily": "'Source Code Pro', Monaco, 'Courier New', monospace",
     "workbench.colorTheme": "Monokai",
+    "editor.acceptSuggestionOnEnter": "smart",
+    "window.newWindowDimensions": "inherit",
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.external.linuxExec": "lxterm",
+    "extensions.ignoreRecommendations": true,
+    "extensions.showRecommendationsOnlyOnDemand": true,
+    "workbench.statusBar.feedback.visible": false,
 }
