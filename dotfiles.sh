@@ -217,7 +217,6 @@ if [ -f /System/Library/CoreServices/SystemVersion.plist ]; then
 		echo_warning "Failed to install 'shpotify.sh'"
 	fi
 	
-	
 	# Show all files in Finder
 	if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/dotfiles/master/showallfiles.sh" -o "$HOME/Scripts/showallfiles.sh"; then
 		echo "    $HOME/Scripts/showallfiles.sh"
@@ -227,8 +226,8 @@ if [ -f /System/Library/CoreServices/SystemVersion.plist ]; then
 		echo_warning "Failed to install 'showallfiles.sh'"
 	fi
 	
-	# mysql from Macports
-	echo 'export PATH="/opt/local/lib/mysql55/bin/:$PATH"' >> "$BASHRC"
+	echo "    create cpuinfo alias"
+	echo "alias cpuinfo='sysctl -n machdep.cpu.brand_string'" >> "$BASHRC"
 	
 	if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/dotfiles/master/macos.sh" -o "/tmp/macos.sh"; then
 		echo "    Set defaults for macOS (/tmp/macos.sh)..."
