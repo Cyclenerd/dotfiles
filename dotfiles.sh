@@ -279,4 +279,24 @@ else
 fi
 
 
+################################################################################
+# Perlbrew
+#    https://perlbrew.pl/
+################################################################################
+
+if $FETCHER "https://install.perlbrew.pl" -o "/tmp/install_perlbrew.sh"; then
+	echo "    Installing perlbrew"
+	echo
+	# shellcheck disable=SC1091
+	source "/tmp/install_perlbrew.sh"
+	rm "/tmp/install_perlbrew.sh"
+	echo
+	echo "    Add ~/perl5/perlbrew/etc/bashrc to $BASHRC"
+	echo "# Perlbrew" >> "$BASHRC"
+	echo "source ~/perl5/perlbrew/etc/bashrc" >> "$BASHRC"
+else
+	echo_warning "Failed to download 'install.perlbrew.pl'"
+fi
+
+
 echo "👍  Done. Note that some of these changes require a logout/restart to take effect."

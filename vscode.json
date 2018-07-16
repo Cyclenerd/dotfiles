@@ -13,5 +13,5 @@
     "terminal.external.linuxExec": "lxterm",
     "extensions.ignoreRecommendations": true,
     "extensions.showRecommendationsOnlyOnDemand": true,
-    "workbench.statusBar.feedback.visible": false,
+    "workbench.statusBar.feedback.visible": false
 }
