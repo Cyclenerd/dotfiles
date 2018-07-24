@@ -18,6 +18,9 @@ alias veloheroup='~/Scripts/veloheroup'
 alias volume='~/Scripts/volume.sh'
 alias brightness='~/Scripts/brightness.sh'
 
+# Remove IP or Server from known_hosts
+alias ssh-keydel='ssh-keygen -f .ssh/known_hosts -R'
+
 # Define nano as our default EDITOR
 export EDITOR='nano'
 
