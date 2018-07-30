@@ -73,3 +73,23 @@ pm_to_blib
 Icon?
 ehthumbs.db
 Thumbs.db
+
+
+# Android Studio Navigation editor temp files #
+###############################################
+.navigation/
+
+# Android Studio captures folder #
+##################################
+captures/
+
+# IntelliJ #
+############
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
