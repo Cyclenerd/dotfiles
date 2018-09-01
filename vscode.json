@@ -3,8 +3,8 @@
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": true,
-    "editor.fontSize": 18,
-    "editor.fontFamily": "'Source Code Pro', Monaco, 'Courier New', monospace",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'Source Code Pro Medium', 'Source Code Pro', Monaco, 'Courier New', monospace",
     "workbench.colorTheme": "Monokai",
     "workbench.colorCustomizations": {
         "tab.border": "#1e1f1c",
@@ -20,5 +20,8 @@
     "terminal.external.linuxExec": "lxterm",
     "extensions.ignoreRecommendations": true,
     "extensions.showRecommendationsOnlyOnDemand": true,
-    "workbench.statusBar.feedback.visible": false
+    "workbench.statusBar.feedback.visible": false,
+    "git.ignoreMissingGitWarning": true,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
+    "files.eol": "\n"
 }

@@ -1,11 +1,14 @@
-[filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+filter "media"]
+        required = true
+        clean = git media clean %f
+        smudge = git media smudge %f
 [user]
-	name = Nils
-	email = git@velohero.com
+        name = Nils
+        email = git@velohero.com
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+        clean = git-lfs clean %f
+        smudge = git-lfs smudge %f
+        required = true
+[core]
+        filemode = false
+        autocrlf = input
