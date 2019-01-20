@@ -30,4 +30,6 @@
     },
     "search.location": "panel",
     "workbench.editor.enablePreview": false,
+    "window.zoomLevel": 0,
+    "problems.decorations.enabled": false,
 }
