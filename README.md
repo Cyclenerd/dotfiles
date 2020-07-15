@@ -22,6 +22,19 @@ Run as user:
 
 Only `bash` and `curl`.
 
+## Theme
+
+I use [Dracula](https://draculatheme.com/) dark theme:
+
+* [Visual Studio Code](https://draculatheme.com/visual-studio-code) - Install Extension "Dracula Official"
+* [Notepad++](https://draculatheme.com/notepad-plus-plus) - Go to `%AppData%\Notepad++\themes` ...
+* [Windows Terminal](https://draculatheme.com/windows-terminal) - Copy `terminal.json` to `profile.json`
+* [Chrome](https://chrome.google.com/webstore/detail/dracula-chrome-theme-dark/gfapcejdoghpoidkfodoiiffaaibpaem) - Install Theme "Dracula Chrome Theme - Dark and Minimal" by Nick
+* [Firefox](https://addons.mozilla.org/en-US/firefox/addon/dracula-dark-colorscheme/) - Install Addon "Dracula Dark Theme" by Raph
+* Windows:
+	* Background: `#282a36`
+	* Accent Color: `#6272a4` or `#50fa7b` (green)
+
 ## License
 
 GNU Public License version 3.

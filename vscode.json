@@ -3,9 +3,9 @@
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": true,
-    "editor.fontSize": 18,
+    "editor.fontSize": 14,
     "editor.fontFamily": "'Source Code Pro Medium', 'Source Code Pro', Monaco, 'Courier New', monospace",
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Dracula",
     "workbench.colorCustomizations": {
         "tab.border": "#1e1f1c",
         "tab.inactiveBackground": "#1e1f1c",
