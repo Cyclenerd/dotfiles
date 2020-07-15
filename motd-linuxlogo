@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# apt install linuxlogo
+# /etc/update-motd.d/00-a-linux-logo
+
+linuxlogo -f -L 11 -u -y
