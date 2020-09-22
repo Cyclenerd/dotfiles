@@ -1,12 +1,24 @@
 ﻿#Persistent  ; Keep the script running until the user exits it.
 
-Menu, Tray, Tip, ⌨️ - Otto Group
-
 ; Custom icon
 I_Icon = %A_ScriptDir%\moneyface.ico
 IfExist, %I_Icon%
     Menu, Tray, Icon, %I_Icon%
-Return
+
+Menu, Tray, Tip, ⌨️ - Otto Group
+Menu, Tray, Add  ; Creates a separator line.
+Menu, Tray, Add, Launchpad, Launchpad
+Menu, Tray, Add, Abwesenheitsplaner, Abwesenheitsplaner
+Menu, Tray, Add  ; Creates a separator line.
+Return  ; End of script's auto-execute section.
+
+Launchpad:
+    Run chrome.exe https://launchpad.ottogroup.com/
+    Return
+
+Abwesenheitsplaner:
+    Run chrome.exe https://launchpad.ottogroup.com/sites#comscdsofthdyess-start
+    Return
 
 
 ; Abwesenheitsplaner
