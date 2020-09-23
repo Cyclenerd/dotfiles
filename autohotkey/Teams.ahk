@@ -17,8 +17,8 @@ Meeting window is active:
     [Ctrl]+[t] : Show participants (🖱️)
     [Ctrl]+[u] : Show conversation (🖱️)
     [Ctrl]+[h] : Raise your hand (🖱️)
-    [Insert]: Share 🖥️ screen
-    [End] : Leave meeting [🇩🇪: Verlassen] (🖱️)
+    [Ctrl]+[Insert]: Share 🖥️ screen
+    [Ctrl]+[End] : Leave meeting [🇩🇪: Verlassen] (🖱️)
 
 Window is active:
     [Ctrl]+[Shift]+[1] : Type ❗ and [Enter]
@@ -106,12 +106,12 @@ Return
         ToolTip, 💡 Teams: ✋
         SetTimer, RemoveToolTip, -3000
         Return
-    Insert:: ; Share screen
+    ^Insert:: ; Share screen
         Send, ^+E
         ToolTip, 💡 Teams: 🖥️
         SetTimer, RemoveToolTip, -5000
         Return
-    End:: ; Leave meeting
+    ^End:: ; Leave meeting
         WinMaximize
         MouseClick, left, 3670, 141 ; Click "Leave" (German: Verlassen) button. Send, ^+B - not always work
         MsgBox, 0, 🏃💨 Left, You left the meeting, 5
