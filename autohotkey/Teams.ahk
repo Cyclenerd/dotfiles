@@ -90,19 +90,19 @@ Return
         Return
     ^t:: ; Show participants
         WinMaximize
-        MouseClick, left, 2820, 141
+        MouseClick, left, 2710, 141
         ToolTip, 💡 Teams: 👨‍👩‍👧‍👦
         SetTimer, RemoveToolTip, -3000
         Return
     ^u:: ; Show conversation
         WinMaximize
-        MouseClick, left, 2915, 141
+        MouseClick, left, 2805, 141
         ToolTip, 💡 Teams: 💬
         SetTimer, RemoveToolTip, -3000
         Return
     ^h:: ; Raise your hand
         WinMaximize
-        MouseClick, left, 3030, 141
+        MouseClick, left, 2920, 141
         ToolTip, 💡 Teams: ✋
         SetTimer, RemoveToolTip, -3000
         Return
