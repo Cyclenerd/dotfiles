@@ -25,12 +25,6 @@ Window is active:
     [Ctrl]+[Shift]+[ß] : Type ❓ and [Enter]
     [Ctrl]+[F1] : This help
 
-Meeting details window is active:
-    [Ctrl]+[j] : Join meeting [🇩🇪: Teilnehmen] (🖱️)
-
-Meeting pop-up is active:
-    [Ctrl]+[Shift]+[j] : Join now [🇩🇪: Jetzt teilnehmen] (🖱️)
-
 -----------------------------------------------------------------------------------------
   🖱️ = done by a mouse click
 )
@@ -76,18 +70,6 @@ Return
         Return
 
 #IfWinActive, ahk_exe Teams.exe
-    ^j:: ; Join
-        WinMaximize
-        MouseClick, left, 3425, 205 ; Click "Join" (German: Teilnehmen) button
-        ToolTip, 💡 Teams: 😊
-        SetTimer, RemoveToolTip, -3000
-        Return
-    +^j:: ; Join meeting
-        WinMaximize
-        MouseClick, left, 2304, 1351 ; Click "Join now"  (German: Jetzt teilnehmen) button
-        ToolTip, 💡 Teams: 👋
-        SetTimer, RemoveToolTip, -3000
-        Return
     ^t:: ; Show participants
         WinMaximize
         MouseClick, left, 2710, 141
