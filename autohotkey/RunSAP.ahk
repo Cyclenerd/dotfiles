@@ -19,12 +19,14 @@ Menu, Tcodes, Add, AL08 : System-Wide List of User Sessions, StartGuiTcode
 Menu, Tcodes, Add, SU01 : User Maintenance, StartGuiTcode
 Menu, Tcodes, Add, STRUST : Trust Manager, StartGuiTcode
 Menu, Tcodes, Add, SMT1 : Trusting Connection, StartGuiTcode
+Menu, Tcodes, Add, STZAC : System Time Zone, StartGuiTcode
 
 ; Custom menu
 Menu, Tray, NoStandard
 Menu, Tray, Tip, RunSAP
 Menu, Tray, Add, Tcodes, :Tcodes
 Menu, Tray, Add ; separator
+Menu, Tray, Add, 000 - %varSu01Name%, Login000Me
 Menu, Tray, Add, SU01 - %varSu01Name%, Su01Me
 Menu, Tray, Add ; separator
 Menu, Tray, Add, STRUST - Add OTTO Root CA, StrustAddOttoCa
@@ -35,6 +37,9 @@ Menu, Tray, Add ; separator
 Menu, Tray, Add, GUI - Import Favorites, GuiFavorites
 Menu, Tray, Add, GUI - Easy Access - Settings, EasyAccessSettings
 Menu, Tray, Add, STMS - Import Queue - Personal Settings, StmsSettings
+Menu, Tray, Add, SCC4 - Change Clients, Scc4Change
+Menu, Tray, Add, STZAC - Change System Time Zone to CET, StzacCET
+Menu, Tray, Add, TZCUSTHELP - Check Time Zone Setting, CheckTimeZone
 Menu, Tray, Add ; separator
 Menu, Tray, Add, Exit, ExitScript
 
@@ -49,6 +54,23 @@ Return
 
 ExitScript:
 	ExitApp
+
+Login000Me:
+	if WinExist("ahk_class SAP_FRONTEND_SESSION") {
+		WinActivate
+		ToolTip, 🔑 RunSAP: Login to Client 000
+		Send, +{tab} ; [Shift]+[Tab]
+		Sleep, 100
+		Send, 000{Enter}
+		Sleep, 100
+		Send, %varSu01Name%{Enter}
+		Sleep, 100
+		ToolTip
+		Return
+	} else {
+		MsgBox, 0, ❓ SAP GUI, SAP GUI note open, 5
+		Return
+	}
 
 Su01Me:
 	if WinExist("ahk_class SAP_FRONTEND_SESSION") {
@@ -92,6 +114,22 @@ StmsSettings:
 		WinActivate
 		Sleep, 200
 		Send, ^+{F12} ; [Crtl]+[Shift]+[F12]
+		Return
+	} else {
+		MsgBox, 0, ❓ SAP GUI, SAP GUI with Tcode STMS in import queue not open (Import Queue: System), 5
+		Return
+	}
+
+Scc4Change:
+	if WinExist("ahk_class SAP_FRONTEND_SESSION") {
+		WinActivate
+		startTcode("SCC4")
+		Sleep, 400
+		; Change
+		Send, ^{F1} ; [Crtl]+[F1]
+		; Pop-up
+		Sleep, 400
+		Send, {Enter}
 		Return
 	} else {
 		MsgBox, 0, ❓ SAP GUI, SAP GUI with Tcode STMS in import queue not open (Import Queue: System), 5
@@ -143,6 +181,54 @@ StrustExportOttoCaDb:
 		Sleep, 400
 		Send, !c ; [Alt]+[C]
 		Send, d
+
+		; Remove ToolTip
+		ToolTip
+		Return
+	} else {
+		MsgBox, 0, ❓ SAP GUI, SAP GUI not open, 5
+		Return
+	}
+
+StzacCET:
+	if WinExist("ahk_class SAP_FRONTEND_SESSION") {
+		WinActivate
+		ToolTip, 🕑 RunSAP: Chnage System Timezone to CET
+		startTcode("STZAC") ; Start Tcode
+		Sleep, 400
+		; Pop-up
+		; Click Yes
+		Send, {tab}
+		Sleep, 200
+		Send, {tab}
+		Sleep, 200
+		Send, {Enter}
+		Sleep, 400
+		; System Time Zone is selected
+		Send, CET{Enter}
+		Sleep, 200
+		; Save
+		Send, ^s ; [Crtl]+[S]
+		;Sleep, 200
+		; Transport
+		; Create Transport
+		;Send, {F8}
+		;Sleep, 200
+		; Short Description selected
+		;Send, CET Timezone{Enter}
+		; Remove ToolTip
+		ToolTip
+		Return
+	} else {
+		MsgBox, 0, ❓ SAP GUI, SAP GUI not open, 5
+		Return
+	}
+
+CheckTimeZone:
+	if WinExist("ahk_class SAP_FRONTEND_SESSION") {
+		WinActivate
+
+		sa38Tzcusthelp()
 
 		; Remove ToolTip
 		ToolTip
@@ -294,6 +380,29 @@ activateSicfService(varSicfServicePath, varSicfServiceName) {
 	Sleep, 400
 	Send, {Enter}
 	Sleep, 1000
+	ToolTip
+	Return
+}
+
+sa38Tzcusthelp() {
+	ToolTip, 🕑 RunSAP: Check System Timezone Setting
+	startTcode("SA38") ; Start Tcode
+	Sleep, 400
+	Send, TZCUSTHELP{Enter}
+	Sleep, 200
+	Send, {F8} ; Change mode
+	Sleep, 200
+	; Current Date selected
+	FormatTime, CurrentDate,, dd.MM.yyyy
+	Send, %CurrentDate%{tab}
+	Sleep, 200
+	FormatTime, CurrentTime,, HH:mm:ss
+	Send, %CurrentTime%{tab}
+	Sleep, 200
+	Send, CET{Enter}
+	Sleep, 200
+	Send, {F8}
+	; Remove ToolTip
 	ToolTip
 	Return
 }
