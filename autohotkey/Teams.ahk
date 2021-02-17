@@ -24,10 +24,18 @@ Meeting window is active:
     [F9] or [Ctrl]+[h] : ✋ Raise your hand (🖱️)
     [Ctrl]+[Insert]: Share 🖥️ screen
     [Ctrl]+[End] : Leave meeting [🇩🇪: Verlassen] (🖱️)
-
-Window is active:
     [Ctrl]+[Shift]+[1] : Type ❗ and [Enter]
     [Ctrl]+[Shift]+[ß] : Type ❓ and [Enter]
+
+Teams window is active:
+    [Ctrl]+[.] : Show default keyboard shortcuts
+    [Ctrl]+[1] : Open Activity
+    [Ctrl]+[2] : Open Chat
+    [Ctrl]+[3] : Open Teams
+    [Ctrl]+[4] : Open Calendar
+    [Ctrl]+[5] : Open Calls
+    [Ctrl]+[6] : Open Files
+
     [F1] : This help
 
 -----------------------------------------------------------------------------------------
