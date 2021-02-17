@@ -205,7 +205,7 @@ StzacCET:
 		Send, {Enter}
 		Sleep, 400
 		; System Time Zone is selected
-		Send, CET{Enter}
+		Send, CET
 		Sleep, 200
 		; Save
 		Send, ^s ; [Crtl]+[S]

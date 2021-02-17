@@ -14,19 +14,29 @@ App is open (also in background or minimized):
     [Ctrl]+[Shift]+[Space] : Enable or disable 🎤 microphone and 📹 camera
 
 Meeting window is active:
-    [Ctrl]+[t] : Show participants (🖱️)
-    [Ctrl]+[u] : Show conversation (🖱️)
-    [Ctrl]+[h] : Raise your hand (🖱️)
+    [Ctrl]+[t] : 👨‍👩‍👧‍👦 Show participants (🖱️)
+    [Ctrl]+[u] : 💬 Show conversation (🖱️)
+    [F4] : Reactions (🖱️)
+    [F5] : 👍 Thumbs Up (🖱️)
+    [F6] : ❤️ Love (🖱️)
+    [F7] : 👏 Applause (🖱️)
+    [F8] : 😀 Smile (🖱️)
+    [F9] or [Ctrl]+[h] : ✋ Raise your hand (🖱️)
     [Ctrl]+[Insert]: Share 🖥️ screen
     [Ctrl]+[End] : Leave meeting [🇩🇪: Verlassen] (🖱️)
 
 Window is active:
     [Ctrl]+[Shift]+[1] : Type ❗ and [Enter]
     [Ctrl]+[Shift]+[ß] : Type ❓ and [Enter]
-    [Ctrl]+[F1] : This help
+    [F1] : This help
 
 -----------------------------------------------------------------------------------------
   🖱️ = done by a mouse click
+)
+
+Reactions =
+(
+[F5] 👍   [F6] ❤️   [F7] 👏   [F8] 😀     [F9] ✋
 )
 
 ; Hotkeys: https://www.autohotkey.com/docs/Hotkeys.htm
@@ -82,9 +92,49 @@ Return
         ToolTip, 💡 Teams: 💬
         SetTimer, RemoveToolTip, -3000
         Return
+    F4::
+        WinMaximize
+        MouseClick, left, 2920, 141
+        MsgBox, 0, ⌨️ Reactions, %Reactions%, 5
+        Return
+    F5:: ; Thumbs Up
+        WinMaximize
+        MouseClick, left, 2920, 141
+        Sleep, 50
+        MouseClick, left, 2552, 250
+        ToolTip, 💡 Teams: 👍
+        SetTimer, RemoveToolTip, -3000
+        Return
+    F6:: ; Love
+        WinMaximize
+        MouseClick, left, 2920, 141
+        Sleep, 50
+        MouseClick, left, 2627, 250
+        ToolTip, 💡 Teams: ❤️
+        SetTimer, RemoveToolTip, -3000
+        Return
+    F7:: ; Applause
+        WinMaximize
+        MouseClick, left, 2920, 141
+        Sleep, 50
+        MouseClick, left, 2717, 250
+        ToolTip, 💡 Teams: 👏
+        SetTimer, RemoveToolTip, -3000
+        Return
+    F8:: ; Happy Face
+        WinMaximize
+        MouseClick, left, 2920, 141
+        Sleep, 50
+        MouseClick, left, 2785, 250
+        ToolTip, 💡 Teams: 😀
+        SetTimer, RemoveToolTip, -3000
+        Return
+    F9::
     ^h:: ; Raise your hand
         WinMaximize
         MouseClick, left, 2920, 141
+        Sleep, 50
+        MouseClick, left, 2884, 250
         ToolTip, 💡 Teams: ✋
         SetTimer, RemoveToolTip, -3000
         Return
@@ -108,7 +158,7 @@ Return
         ToolTip, 💡 Teams: ❓
         SetTimer, RemoveToolTip, -3000
         Return
-    ^F1::
+    F1::
         MsgBox, 0, ⌨️ Help, %Help%
         Return
 
