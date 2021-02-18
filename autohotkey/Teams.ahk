@@ -14,16 +14,17 @@ App is open (also in background or minimized):
     [Ctrl]+[Shift]+[Space] : Enable or disable 🎤 microphone and 📹 camera
 
 Meeting window is active:
-    [Ctrl]+[t] : 👨‍👩‍👧‍👦 Show participants (🖱️)
-    [Ctrl]+[u] : 💬 Show conversation (🖱️)
-    [F4] : Reactions (🖱️)
-    [F5] : 👍 Thumbs Up (🖱️)
-    [F6] : ❤️ Love (🖱️)
-    [F7] : 👏 Applause (🖱️)
-    [F8] : 😀 Smile (🖱️)
-    [F9] or [Ctrl]+[h] : ✋ Raise your hand (🖱️)
-    [Ctrl]+[Insert]: Share 🖥️ screen
-    [Ctrl]+[End] : Leave meeting [🇩🇪: Verlassen] (🖱️)
+    [Pos1] or [Ctrl]+[j] : Join meeting
+    [Ctrl]+[t] : 👨‍👩‍👧‍👦 Show participants
+    [Ctrl]+[u] : 💬 Show conversation
+    [F4] : Reactions
+    [F5] : 👍 Thumbs Up
+    [F6] : ❤️ Love
+    [F7] : 👏 Applause
+    [F8] : 😀 Smile
+    [F9] or [Ctrl]+[h] : ✋ Raise your hand
+    [Insert]: Share 🖥️ screen
+    [End] : Leave meeting [🇩🇪: Verlassen] (🖱️)
     [Ctrl]+[Shift]+[1] : Type ❗ and [Enter]
     [Ctrl]+[Shift]+[ß] : Type ❓ and [Enter]
 
@@ -87,73 +88,122 @@ Return
         WinActivate ahk_id %winid%
         Return
 
+firstNavButton() {
+    MouseGetPos, xpos, ypos 
+    MouseClick, left, 240, 150
+    Sleep, 2
+    MouseClick, left, 240, 150
+    MouseMove, %xpos%, %ypos%
+    Sleep, 2
+    Send, {Tab 2}{Left 10}
+	Return
+}
+
 #IfWinActive, ahk_exe Teams.exe
     ^t:: ; Show participants
         WinMaximize
-        MouseClick, left, 2710, 141
         ToolTip, 💡 Teams: 👨‍👩‍👧‍👦
+        firstNavButton()
+        Send, {Enter}
         SetTimer, RemoveToolTip, -3000
         Return
     ^u:: ; Show conversation
         WinMaximize
-        MouseClick, left, 2805, 141
         ToolTip, 💡 Teams: 💬
+        firstNavButton()
+        Send, {Right 1}{Enter}
         SetTimer, RemoveToolTip, -3000
         Return
     F4::
         WinMaximize
-        MouseClick, left, 2920, 141
-        MsgBox, 0, ⌨️ Reactions, %Reactions%, 5
+        firstNavButton()
+        Send, {Right 2}{Enter}
+        MsgBox, 0, ✋ Reactions, %Reactions%, 5
         Return
     F5:: ; Thumbs Up
         WinMaximize
-        MouseClick, left, 2920, 141
-        Sleep, 50
-        MouseClick, left, 2552, 250
         ToolTip, 💡 Teams: 👍
+        firstNavButton()
+        Send, {Right 2}
+        Sleep, 25
+        Send, {Enter}
+        Sleep, 40
+        Send, {Left 5}
+        Send, {Enter}
         SetTimer, RemoveToolTip, -3000
         Return
     F6:: ; Love
         WinMaximize
-        MouseClick, left, 2920, 141
-        Sleep, 50
-        MouseClick, left, 2627, 250
         ToolTip, 💡 Teams: ❤️
+        firstNavButton()
+        Send, {Right 2}
+        Sleep, 25
+        Send, {Enter}
+        Sleep, 40
+        Send, {Left 5}
+        Send, {Right}{Enter}
         SetTimer, RemoveToolTip, -3000
         Return
     F7:: ; Applause
         WinMaximize
-        MouseClick, left, 2920, 141
-        Sleep, 50
-        MouseClick, left, 2717, 250
         ToolTip, 💡 Teams: 👏
+        firstNavButton()
+        Send, {Right 2}
+        Sleep, 25
+        Send, {Enter}
+        Sleep, 40
+        Send, {Left 5}
+        Send, {Right 2}{Enter}
         SetTimer, RemoveToolTip, -3000
         Return
     F8:: ; Happy Face
         WinMaximize
-        MouseClick, left, 2920, 141
-        Sleep, 50
-        MouseClick, left, 2785, 250
         ToolTip, 💡 Teams: 😀
+        firstNavButton()
+        Send, {Right 2}
+        Sleep, 25
+        Send, {Enter}
+        Sleep, 40
+        Send, {Left 5}
+        Send, {Right 3}{Enter}
         SetTimer, RemoveToolTip, -3000
         Return
     F9::
     ^h:: ; Raise your hand
         WinMaximize
-        MouseClick, left, 2920, 141
-        Sleep, 50
-        MouseClick, left, 2884, 250
         ToolTip, 💡 Teams: ✋
+        firstNavButton()
+        Send, {Right 2}
+        Sleep, 25
+        Send, {Enter}
+        Sleep, 40
+        Send, {Left 5}
+        Send, {Right 4}{Enter}
         SetTimer, RemoveToolTip, -3000
         Return
-    ^Insert:: ; Share screen
+    Home::
+    ^j:: ; Join meeting
+        WinMaximize
+        ToolTip, 💡 Teams: Join meeting
+        MouseGetPos, xpos, ypos 
+        MouseClick, left, 1900, 300
+        Sleep, 2
+        MouseClick, left, 1900, 300
+        MouseMove, %xpos%, %ypos%
+        Sleep, 2
+        Send, {Tab 8}{Enter}
+        SetTimer, RemoveToolTip, -5000
+        Return
+    Insert:: ; Share screen
         Send, ^+E
         ToolTip, 💡 Teams: 🖥️
         SetTimer, RemoveToolTip, -5000
         Return
-    ^End:: ; Leave meeting
+    End:: ; Leave meeting
         WinMaximize
         MouseClick, left, 3670, 141 ; Click "Leave" (German: Verlassen) button. Send, ^+B - not always work
+        Sleep, 25
+        Send, {Tab 2}{Enter}
         MsgBox, 0, 🏃💨 Left, You left the meeting, 5
         Return
     +^1:: ; type !
