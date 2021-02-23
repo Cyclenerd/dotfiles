@@ -24,7 +24,7 @@ Meeting window is active:
     [F8] : 😀 Smile
     [F9] or [Ctrl]+[h] : ✋ Raise your hand
     [Insert]: Share 🖥️ screen
-    [End] : Leave meeting [🇩🇪: Verlassen] (🖱️)
+    [Ctrl]+[End] : Leave meeting [🇩🇪: Verlassen] (🖱️)
     [Ctrl]+[Shift]+[1] : Type ❗ and [Enter]
     [Ctrl]+[Shift]+[ß] : Type ❓ and [Enter]
 
@@ -199,7 +199,7 @@ firstNavButton() {
         ToolTip, 💡 Teams: 🖥️
         SetTimer, RemoveToolTip, -5000
         Return
-    End:: ; Leave meeting
+    ^End:: ; Leave meeting
         WinMaximize
         MouseClick, left, 3670, 141 ; Click "Leave" (German: Verlassen) button. Send, ^+B - not always work
         Sleep, 25
