@@ -19,7 +19,6 @@
     "terminal.external.osxExec": "iTerm.app",
     "terminal.external.linuxExec": "lxterm",
     "extensions.ignoreRecommendations": true,
-    "extensions.showRecommendationsOnlyOnDemand": true,
     "git.ignoreMissingGitWarning": true,
     "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
     "files.eol": "\n",
@@ -30,4 +29,6 @@
     "workbench.editor.enablePreview": false,
     "window.zoomLevel": 0,
     "problems.decorations.enabled": false,
+    "html.autoClosingTags": false,
+    "diffEditor.ignoreTrimWhitespace": false
 }
