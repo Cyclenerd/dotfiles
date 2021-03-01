@@ -95,8 +95,11 @@ firstNavButton() {
     MouseClick, left, 240, 150
     MouseMove, %xpos%, %ypos%
     Sleep, 2
-    Send, {Tab 2}{Left 10}
-	Return
+    Send, {Tab 2}{Right 10}
+    Sleep, 2
+    Send, {Left 8}
+    Sleep, 2
+    Return
 }
 
 #IfWinActive, ahk_exe Teams.exe
