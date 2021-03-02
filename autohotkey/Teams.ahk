@@ -15,6 +15,7 @@ App is open (also in background or minimized):
 
 Meeting window is active:
     [Pos1] or [Ctrl]+[j] : Join meeting
+    [Ctrl]+[g] : Toggle for breakout rooms (Grueppenraeume) button
     [Ctrl]+[t] : 👨‍👩‍👧‍👦 Show participants
     [Ctrl]+[u] : 💬 Show conversation
     [F4] : Reactions
@@ -47,6 +48,8 @@ Reactions =
 (
 [F5] 👍   [F6] ❤️   [F7] 👏   [F8] 😀     [F9] ✋
 )
+
+GrueppenraeumeButtonExist = 0
 
 ; Hotkeys: https://www.autohotkey.com/docs/Hotkeys.htm
 ; ^ = [Ctrl]
@@ -88,45 +91,75 @@ Return
         WinActivate ahk_id %winid%
         Return
 
-firstNavButton() {
+firstNavButton(GrueppenraeumeButtonExist) {
+    ; Focus the first button "Teilnehmer anzeigen/ausblenden"
     MouseGetPos, xpos, ypos 
     MouseClick, left, 240, 150
     Sleep, 2
     MouseClick, left, 240, 150
     MouseMove, %xpos%, %ypos%
     Sleep, 2
+    ; Move focus to far right "Verlassen" button
     Send, {Tab 2}{Right 10}
     Sleep, 2
-    Send, {Left 8}
+    ; Move the focus from right to left
+    ; It is not possible from the left.
+    ; Sometimes there is the "Steuerung anfordern" button on the far left.
+    ; 0 - Verlassen
+    ; 1 - Inhalte freigeben
+    ; 2 - Stumm
+    ; 3 - Kamera
+    ; 4 - Weitere Aktionen
+    ; 5 - Gruppenraeume (only if you are the inviter (owner))
+    ; 5 or 6 - Hand
+    ; 6 or 7 - Unterhaltung
+    ; 7 or 8 - Teilnehmer
+    if (GrueppenraeumeButtonExist) {
+        ; with breakout rooms (Grueppenraeume) button
+        Send, {Left 8}
+    } else {
+        ; without breakout rooms (Grueppenraeume) button
+        Send, {Left 7}
+    }
     Sleep, 2
     Return
 }
 
 #IfWinActive, ahk_exe Teams.exe
+    ^g:: ; toggle for breakout rooms (Grueppenraeume) button
+        if (GrueppenraeumeButtonExist) {
+            ToolTip, 💡 Teams: Grueppenraeume button toggle reset
+            GrueppenraeumeButtonExist = 0
+        } else {
+            ToolTip, 💡 Teams: Grueppenraeume button toggle set (button exist)
+            GrueppenraeumeButtonExist = 1
+        }
+        SetTimer, RemoveToolTip, -3000
+        Return
     ^t:: ; Show participants
         WinMaximize
         ToolTip, 💡 Teams: 👨‍👩‍👧‍👦
-        firstNavButton()
+        firstNavButton(GrueppenraeumeButtonExist)
         Send, {Enter}
         SetTimer, RemoveToolTip, -3000
         Return
     ^u:: ; Show conversation
         WinMaximize
         ToolTip, 💡 Teams: 💬
-        firstNavButton()
+        firstNavButton(GrueppenraeumeButtonExist)
         Send, {Right 1}{Enter}
         SetTimer, RemoveToolTip, -3000
         Return
     F4::
         WinMaximize
-        firstNavButton()
+        firstNavButton(GrueppenraeumeButtonExist)
         Send, {Right 2}{Enter}
         MsgBox, 0, ✋ Reactions, %Reactions%, 5
         Return
     F5:: ; Thumbs Up
         WinMaximize
         ToolTip, 💡 Teams: 👍
-        firstNavButton()
+        firstNavButton(GrueppenraeumeButtonExist)
         Send, {Right 2}
         Sleep, 25
         Send, {Enter}
@@ -138,7 +171,7 @@ firstNavButton() {
     F6:: ; Love
         WinMaximize
         ToolTip, 💡 Teams: ❤️
-        firstNavButton()
+        firstNavButton(GrueppenraeumeButtonExist)
         Send, {Right 2}
         Sleep, 25
         Send, {Enter}
@@ -150,7 +183,7 @@ firstNavButton() {
     F7:: ; Applause
         WinMaximize
         ToolTip, 💡 Teams: 👏
-        firstNavButton()
+        firstNavButton(GrueppenraeumeButtonExist)
         Send, {Right 2}
         Sleep, 25
         Send, {Enter}
@@ -162,7 +195,7 @@ firstNavButton() {
     F8:: ; Happy Face
         WinMaximize
         ToolTip, 💡 Teams: 😀
-        firstNavButton()
+        firstNavButton(GrueppenraeumeButtonExist)
         Send, {Right 2}
         Sleep, 25
         Send, {Enter}
@@ -175,7 +208,7 @@ firstNavButton() {
     ^h:: ; Raise your hand
         WinMaximize
         ToolTip, 💡 Teams: ✋
-        firstNavButton()
+        firstNavButton(GrueppenraeumeButtonExist)
         Send, {Right 2}
         Sleep, 25
         Send, {Enter}
@@ -185,7 +218,9 @@ firstNavButton() {
         SetTimer, RemoveToolTip, -3000
         Return
     Home::
+    ^Home::
     ^j:: ; Join meeting
+        GrueppenraeumeButtonExist = 0 ; Reset toggle
         WinMaximize
         ToolTip, 💡 Teams: Join meeting
         MouseGetPos, xpos, ypos 
@@ -197,7 +232,8 @@ firstNavButton() {
         Send, {Tab 8}{Enter}
         SetTimer, RemoveToolTip, -5000
         Return
-    Insert:: ; Share screen
+    Insert::
+    ^Insert:: ; Share screen
         Send, ^+E
         ToolTip, 💡 Teams: 🖥️
         SetTimer, RemoveToolTip, -5000
@@ -208,6 +244,7 @@ firstNavButton() {
         Sleep, 25
         Send, {Tab 2}{Enter}
         MsgBox, 0, 🏃💨 Left, You left the meeting, 5
+        GrueppenraeumeButtonExist = 0 ; Reset toggle
         Return
     +^1:: ; type !
         Send, ❗{Enter}
