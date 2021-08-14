@@ -27,8 +27,11 @@
         "*.tt2": "tt"
     },
     "workbench.editor.enablePreview": false,
-    "window.zoomLevel": 0,
     "problems.decorations.enabled": false,
     "html.autoClosingTags": false,
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "remote.SSH.remotePlatform": {
+        "debian": "linux"
+    },
+    "editor.fontLigatures": "'ccmp' off"
 }
