@@ -201,15 +201,6 @@ fi
 ################################################################################
 
 if [ -f /System/Library/CoreServices/SystemVersion.plist ]; then
-	# shpotify is a simple Bash/Apple script to control Spotify from the command line on a Mac
-	if $FETCHER "https://raw.githubusercontent.com/hnarayanan/shpotify/master/spotify" -o "$HOME/Scripts/shpotify.sh"; then
-		echo "    $HOME/Scripts/shpotify.sh"
-		chmod +x "$HOME/Scripts/shpotify.sh"
-		echo "alias spotify='~/Scripts/shpotify.sh'" >> "$BASHRC"
-	else
-		echo_warning "Failed to install 'shpotify.sh'"
-	fi
-	
 	# Show all files in Finder
 	if $FETCHER "https://raw.githubusercontent.com/Cyclenerd/dotfiles/master/showallfiles.sh" -o "$HOME/Scripts/showallfiles.sh"; then
 		echo "    $HOME/Scripts/showallfiles.sh"
