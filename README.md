@@ -28,6 +28,7 @@ I use [Dracula](https://draculatheme.com/) dark theme:
 
 * [Visual Studio Code](https://draculatheme.com/visual-studio-code) - Install Extension "Dracula Official"
 * [Notepad++](https://draculatheme.com/notepad-plus-plus) - Go to `%AppData%\Notepad++\themes` ...
+* [ConEmu](https://github.com/dracula/conemu)
 * [Windows Terminal](https://draculatheme.com/windows-terminal) - Copy `terminal.json` to `profile.json`
 * [Chrome](https://chrome.google.com/webstore/detail/dracula-chrome-theme-dark/gfapcejdoghpoidkfodoiiffaaibpaem) - Install Theme "Dracula Chrome Theme - Dark and Minimal" by Nick
 * [Firefox](https://addons.mozilla.org/en-US/firefox/addon/dracula-dark-colorscheme/) - Install Addon "Dracula Dark Theme" by Raph
