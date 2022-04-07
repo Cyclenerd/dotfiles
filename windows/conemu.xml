@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2022-04-07 13:16:28" build="210912">
+		<key name=".Vanilla" modified="2022-04-07 14:07:00" build="210912">
 			<value name="Language" type="string" data="en"/>
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
@@ -82,6 +82,7 @@
 			<value name="JumpListAutoUpdate" type="hex" data="01"/>
 			<value name="SaveCmdHistory" type="hex" data="01"/>
 			<value name="CmdLineHistory" type="multi">
+				<line data="{WSL::WSL}"/>
 				<line data="{Shells::cmd}"/>
 				<line data="{Bash::CygWin bash}"/>
 				<line data="{Bash::bash}"/>
@@ -141,8 +142,8 @@
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd X" type="long" data="870"/>
-			<value name="ConWnd Y" type="long" data="234"/>
+			<value name="ConWnd X" type="long" data="327"/>
+			<value name="ConWnd Y" type="long" data="93"/>
 			<value name="LastMonitor" type="string" data="0,0,3840,2064"/>
 			<value name="ConWnd Width" type="dword" data="0000007c"/>
 			<value name="ConWnd Height" type="dword" data="00000026"/>
@@ -406,7 +407,7 @@
 			<value name="Update.DownloadPath" type="string" data="%TEMP%\ConEmu"/>
 			<value name="Update.LeavePackages" type="hex" data="00"/>
 			<value name="Update.PostUpdateCmd" type="string" data="echo Last successful update&gt;ConEmuUpdate.info &amp;&amp; date /t&gt;&gt;ConEmuUpdate.info &amp;&amp; time /t&gt;&gt;ConEmuUpdate.info"/>
-			<key name="HotKeys" modified="2022-04-07 13:16:28" build="210912">
+			<key name="HotKeys" modified="2022-04-07 14:07:00" build="210912">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="000000a2"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
@@ -460,7 +461,7 @@
 				<value name="CloseTabKey" type="dword" data="00101157"/>
 				<value name="CloseGroupKey" type="dword" data="00000000"/>
 				<value name="CloseGroupPrcKey" type="dword" data="00000000"/>
-				<value name="CloseAllConKey" type="dword" data="00000000"/>
+				<value name="CloseAllConKey" type="dword" data="00001273"/>
 				<value name="CloseZombiesKey" type="dword" data="00000000"/>
 				<value name="CloseExceptConKey" type="dword" data="00000000"/>
 				<value name="CloseToRightKey" type="dword" data="00000000"/>
