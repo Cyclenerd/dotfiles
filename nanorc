@@ -3,6 +3,5 @@ set noconvert
 set nowrap
 set regexp
 set smarthome
-set smooth
 set linenumbers
 set constantshow
