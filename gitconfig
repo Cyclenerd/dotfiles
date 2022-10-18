@@ -3,3 +3,4 @@
         name = Nils
 [core]
         filemode = false
+        autocrlf = input
