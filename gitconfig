@@ -4,3 +4,5 @@
 [core]
         filemode = false
         autocrlf = input
+[pull]
+        rebase = false
