@@ -92,6 +92,10 @@ Website: <https://sqlitebrowser.org/dl/>
 brew install --cask db-browser-for-sqlite
 ```
 
+### Sourcetree
+
+Website: <https://www.sourcetreeapp.com/>
+
 ### Audacity
 
 Website: <https://www.audacityteam.org/download/mac/>
