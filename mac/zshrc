@@ -1,0 +1,20 @@
+# https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html
+PS1=' %F{green}%n@%m%f:%F{magenta}%~%f $ '
+
+# Use brewed curl
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+
+# Ansible vault password
+export ANSIBLE_VAULT_PASSWORD_FILE="/Users/nils/.ansible/ansible-vault-secret-password"
+
+# Enable autocomplete
+autoload -Uz compinit && compinit
+
+# gcloud autocomplete
+source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+
+# Use brewed Perl
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
+
+# Aliases
+alias ll='ls -lah'

@@ -19,13 +19,14 @@ Install the missing package manager for macOS:
 
 ```shell
 brew install curl wget
-echo 'export PATH="/opt/homebrew/opt/curl/bin:$PATH"' >> ~/.zshrc
 brew install htop
 brew install git
-brew install nano
-brew install sqlite
+brew install nano sqlite jq shellcheck flake8
 brew install ansible terraform
 brew install imagemagick jhead
+# Perl
+brew install perl
+PERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib
 ```
 
 
