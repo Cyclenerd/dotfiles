@@ -45,7 +45,7 @@ Website: <https://www.mozilla.org/en-US/firefox/new/>
 
 #### Deutsch
 
-Language Pack: <https://addons.mozilla.org/en-US/firefox/addon/deutsch-de-language-pack/>
+German Dictionary: <https://addons.mozilla.org/en-US/firefox/addon/dictionary-german/>
 
 ### Chrome
 
