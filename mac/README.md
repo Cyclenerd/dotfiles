@@ -22,7 +22,7 @@ brew install curl wget
 brew install htop
 brew install git
 brew install nano sqlite jq shellcheck flake8
-brew install ansible terraform
+brew install ansible terraform terraform-docs
 brew install imagemagick jhead
 # Perl
 brew install perl
