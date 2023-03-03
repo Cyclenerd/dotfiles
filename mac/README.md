@@ -226,7 +226,7 @@ More help: <https://support.apple.com/guide/terminal/keyboard-shortcuts-trmlshtc
 
 ### Add Mapping
 
-![Screenshot: Terminal - Add Mapping](./terminal-mapping.png?v1)
+![Screenshot: Terminal - Add Mapping](./terminal-add-mapping.png?v1)
 
 ### Mapping
 
