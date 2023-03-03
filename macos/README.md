@@ -130,7 +130,7 @@ Watch out! Not all apps are optimized for the Apple Silicon CPU!
 | [GoldenCheetah](http://www.goldencheetah.org/#section-download) | ❌ |
 | [Garmin Express](https://www.garmin.com/en-US/software/express/mac/>) | ❌ |
 | [Google Earth Pro](https://www.google.com/earth/versions/#download-pro>) | ❌ |
-| [Logitech G HUB](hhttps://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.zip) | ❌ |
+| [Logitech G HUB](https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.zip) | ❌ |
 
 ### App Store
 
