@@ -200,11 +200,10 @@ Link: <https://apps.apple.com/de/app/xcode/id497799835?l=en&mt=12>
 
 #### FileMerge
 
-FileMerge (opendiff) is bundled with Xcode. Copy it to Applications folder:
+FileMerge (opendiff) is bundled with Xcode.
 
-```shell
-cp -r /Applications/Xcode.app/Contents/Applications/FileMerge.app /Applications/
-```
+(Show Package Contents) -> Contents -> Applications -> FileMerge.app
+
 ### Commander One PRO
 
 Link: <https://apps.apple.com/de/app/commander-one-pro-ftp-client/id1035237815?l=en&mt=12>
