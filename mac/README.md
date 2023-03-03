@@ -63,7 +63,7 @@ Download: <https://code.visualstudio.com/Download>
 You can also run VS Code from the terminal by typing 'code' after adding it to the path:
 
 1. Launch VS Code.
-1. Open the Command Palette (ç+<kbd>Shift</kbd>+<kbd>P</kbd>) and type `shell command` to find the Shell Command: Install 'code' command in PATH command.
+1. Open the Command Palette (<kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>) and type `shell command` to find the Shell Command: Install 'code' command in PATH command.
 
 #### Setting
 
@@ -226,11 +226,11 @@ More help: <https://support.apple.com/guide/terminal/keyboard-shortcuts-trmlshtc
 
 ### Add Mapping
 
-![Screenshot: Terminal - Add Mapping](./terminal-mapping.png)
+![Screenshot: Terminal - Add Mapping](./terminal-mapping.png?v1)
 
 ### Mapping
 
-![Screenshot: Terminal - Keyboard](./terminal-keyboard.png)
+![Screenshot: Terminal - Keyboard](./terminal-keyboard.png?v1)
 
 
 ## Themes
