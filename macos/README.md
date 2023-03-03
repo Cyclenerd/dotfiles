@@ -1,8 +1,14 @@
 # macOS
 
-Watch out! Not all apps are optimized for the Apple Silicon CPU!
+My notes and scripts to quickly configure a new Mac.
 
-![Screenshot: App Info](intel-universal-apple.png)
+## Full Disk Access
+
+⚠️ Some command requires to grant full disk access to the `Terminal.app`.
+
+Edit: System Preferences → Privacy & Security → Full Disk Access
+
+![Screenshot: Full Disk Access](./full_disk_access.png)
 
 
 ## Homebrew
@@ -33,19 +39,9 @@ brew install cpanminus pkg-config
 
 ## Applications
 
-### KeePassXC
-
-Website: <https://keepassxc.org/download/#mac>
-
-### Spotify
-
-Website: <https://www.spotify.com/de/download/mac/>
-
 ### Firefox
 
 Website: <https://www.mozilla.org/en-US/firefox/new/>
-
-#### Deutsch
 
 German Dictionary: <https://addons.mozilla.org/en-US/firefox/addon/dictionary-german/>
 
@@ -93,14 +89,6 @@ To install a extension you can also just execute the following command in the Co
 ext install vscode-icons
 ```
 
-### LibreOffice
-
-Website: <https://www.libreoffice.org/download/download-libreoffice/>
-
-### Adobe Acrobat Reader
-
-Website: <https://www.adobe.com/acrobat/pdf-reader.html>
-
 ### Google Cloud CLI
 
 Website: <https://cloud.google.com/sdk/docs/install>
@@ -117,111 +105,48 @@ Website: <https://sqlitebrowser.org/dl/>
 brew install --cask db-browser-for-sqlite
 ```
 
-### Sourcetree
+### Manually
 
-Website: <https://www.sourcetreeapp.com/>
+Watch out! Not all apps are optimized for the Apple Silicon CPU!
 
-### Audacity
+![Screenshot: App Info](intel-universal-apple.png)
 
-Website: <https://www.audacityteam.org/download/mac/>
+| Software | Apple Silicon |
+|----------|---------------|
+| [KeePassXC](https://keepassxc.org/download/#mac) | ✅ |
+| [Spotify](https://www.spotify.com/de/download/mac/>) | ✅ |
+| [LibreOffice](https://www.libreoffice.org/download/download-libreoffice/) | ✅ |
+| [Adobe Acrobat Reader](https://www.adobe.com/acrobat/pdf-reader.html) | ✅ |
+| [Sourcetree](https://www.sourcetreeapp.com/) | ✅ |
+| [Audacity](https://www.audacityteam.org/download/mac/) | ✅ |
+| [Elgato Control Center](https://www.elgato.com/en/downloads) | ✅ |
+| [Geekbench 6](https://www.geekbench.com/download/) | ✅ |
+| [OBS](https://obsproject.com/) | ✅ |
+| [VLC](https://www.videolan.org/vlc/) | ✅ |
+| [Shotcut](https://www.shotcut.org/download/) | ✅ |
+| [Poedit](https://poedit.net/download>) | ✅ |
+| [qFlipper](https://flipperzero.one/update) | ✅ |
+| [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases/latest) | ✅ |
+| [GoldenCheetah](http://www.goldencheetah.org/#section-download) | ❌ |
+| [Garmin Express](https://www.garmin.com/en-US/software/express/mac/>) | ❌ |
+| [Google Earth Pro](https://www.google.com/earth/versions/#download-pro>) | ❌ |
+| [Logitech G HUB](hhttps://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.zip) | ❌ |
 
-### Elgato Control Center
+### App Store
 
-Website: <https://www.elgato.com/en/downloads>
-
-### Geekbench 6
-
-Website: <https://www.geekbench.com/download/>
-
-### OBS
-
-Website: <https://obsproject.com/>
-
-### VLC
-
-Website: <https://www.videolan.org/vlc/>
-
-### Shotcut
-
-Website: <https://www.shotcut.org/download/>
-
-### Poedit
-
-Website: <https://poedit.net/download>
-
-### qFlipper
-
-Website: <https://flipperzero.one/update>
-
-### QMK Toolbox
-
-Website: <https://docs.qmk.fm/#/>
-
-Download: <https://github.com/qmk/qmk_toolbox/releases/latest>
-
-### Inkscape
-
-macOS Ventura (13): ❌ not supported
-
-Website: <https://inkscape.org/en/release/>
-
-### GoldenCheetah
-
-Apple Silicon: ❌
-
-Website: <http://www.goldencheetah.org/#section-download>
-
-### Garmin Express
-
-Apple Silicon: ❌
-
-Website: <https://www.garmin.com/en-US/software/express/mac/>
-
-### Google Earth Pro
-
-Apple Silicon: ❌
-
-Website: <https://www.google.com/earth/versions/#download-pro>
-
-### Logitech G HUB
-
-Apple Silicon: ❌
-
-Website: <https://support.logi.com/hc/en-us/articles/360036533533-Download-Stub-G403>
-
-Download: <https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.zip>
-
-
-## App Store
-
-### Xcode
-
-Link: <https://apps.apple.com/de/app/xcode/id497799835?l=en&mt=12>
-
-#### FileMerge
-
-FileMerge (opendiff) is bundled with Xcode.
-
-(Show Package Contents) -> Contents -> Applications -> FileMerge.app
-
-### Commander One PRO
-
-Link: <https://apps.apple.com/de/app/commander-one-pro-ftp-client/id1035237815?l=en&mt=12>
-
-### The Unarchiver
-
-Link: <https://apps.apple.com/de/app/the-unarchiver/id425424353?l=en&mt=12>
-
-### Greenshot
-
-Link: <https://apps.apple.com/de/app/greenshot/id1103915944?l=en&mt=12>
-
-### dict.cc plus
-
-Link: <https://apps.apple.com/de/app/dict-cc-dictionary/id521791825?l=en>
+* [Xcode](https://apps.apple.com/de/app/xcode/id497799835?l=en&mt=12)
+    * FileMerge (opendiff) is bundled with Xcode. "Show Package Contents" of Xcode -> Contents -> Applications -> FileMerge.app
+* [Commander One PRO](https://apps.apple.com/de/app/commander-one-pro-ftp-client/id1035237815?l=en&mt=12>)
+* [The Unarchiver](https://apps.apple.com/de/app/the-unarchiver/id425424353?l=en&mt=12)
+* [Greenshot](https://apps.apple.com/de/app/greenshot/id1103915944?l=en&mt=12)
+* [dict.cc plus](https://apps.apple.com/de/app/dict-cc-dictionary/id521791825?l=en)
 
 
 ## Terminal
+
+Import [`Dracula.terminal`](./Dracula.terminal) into Terminal Settings (<kbd>Cmd</kbd>+<kbd>,</kbd>)
+
+![Screenshot: Terminal Settings](./terminal-settings.png)
 
 Remap Keyboad shortcuts:
 
@@ -241,15 +166,21 @@ More help: <https://support.apple.com/guide/terminal/keyboard-shortcuts-trmlshtc
 ![Screenshot: Terminal - Keyboard](./terminal-keyboard.png?v1)
 
 
-## Themes
+## Themes / Fonts
 
 ### Source Code Pro
 
 Website: <https://adobe-fonts.github.io/source-code-pro/>
 
-Download TTF: <https://github.com/adobe-fonts/source-code-pro/releases/latest>
+Download TTF: <https://fonts.google.com/download?family=Source%20Code%20Pro>
 
 Install: `SourceCodePro-Medium.ttf`
+
+### Roboto
+
+Download TTF: <https://fonts.google.com/download?family=Roboto>
+
+Install: `Roboto-Regular.ttf`
 
 ### Dracula
 
@@ -279,22 +210,25 @@ Download: <https://download.ebz.epson.net/dsc/du/02/DriverDownloadInfo.do?LG2=EN
 
 ## Hypervisor Virtualization
 
+### Parallels Desktop
+
+Download: <https://www.parallels.com/de/products/desktop/trial/>
+
 ### UTM Virtual Machines
 
 Website: <https://mac.getutm.app/>
 
 Link: <https://apps.apple.com/de/app/utm-virtual-machines/id1538878817?l=en&mt=12>
 
-### Parallels Desktop
+#### Images
 
-Download: <https://www.parallels.com/de/products/desktop/trial/>
+* [Ubuntu](https://ubuntu.com/download/server/arm)
+* [Rocky](https://rockylinux.org/download)
 
-### Images
 
-#### Ubuntu
+## Defaults
 
-Download: <https://ubuntu.com/download/server/arm>
+For most settings I have saved the macOS `defaults`.
+You can find them in the [defaults](./defaults/) folder.
 
-##### Rocky
-
-Download: <https://rockylinux.org/download>
+Run the scripts only after all programs, themes and fonts are installed.

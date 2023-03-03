@@ -1,8 +1,5 @@
 [user]
         email = git@nkn-it.de
         name = Nils
-[core]
-        filemode = false
-        autocrlf = input
 [pull]
-        rebase = false
+        rebase = true

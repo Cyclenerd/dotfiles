@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ME=$(basename "$0")
 
@@ -9,10 +9,10 @@ function usage {
 }
 
 if [ "$1" == 'yes' ] || [ "$1" == 'YES' ]; then
-	defaults write com.apple.finder AppleShowAllFiles YES
+	defaults write com.apple.finder "AppleShowAllFiles" -bool "true"
 	killall "Finder"
 elif [ "$1" == 'no' ] || [ "$1" == 'NO' ]; then
-	defaults write com.apple.finder AppleShowAllFiles NO
+	defaults write com.apple.finder "AppleShowAllFiles" -bool "false"
 	killall "Finder"
 else
 	usage 1
