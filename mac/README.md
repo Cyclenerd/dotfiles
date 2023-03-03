@@ -74,6 +74,7 @@ Open Settings (<kbd>Cmd</kbd>+<kbd>,</kbd>) and copy JSON settings: [vscode.json
 Install extensions:
 ```shell
 code --install-extension dracula-theme.theme-dracula
+code --install-extension samosad.tt
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension hashicorp.terraform
 code --install-extension redhat.ansible
