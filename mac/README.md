@@ -69,6 +69,21 @@ You can also run VS Code from the terminal by typing 'code' after adding it to t
 
 Open Settings (<kbd>Cmd</kbd>+<kbd>,</kbd>) and copy JSON settings: [vscode.json](vscode.json)
 
+#### Extensions
+
+Install extensions:
+```shell
+code --install-extension dracula-theme.theme-dracula
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension hashicorp.terraform
+code --install-extension redhat.ansible
+code --install-extension ZainChen.json
+code --install-extension mechatroner.rainbow-csv
+code --install-extension redhat.vscode-yaml
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension GitLab.gitlab-workflow
+```
+
 ### LibreOffice
 
 Website: <https://www.libreoffice.org/download/download-libreoffice/>
@@ -207,6 +222,8 @@ Remap Keyboad shortcuts:
 | <kbd>Home</kbd> | <kbd>Control</kbd>+<kbd>A</kbd> | Move the insertion point to the beginning of the line |
 | <kbd>End</kbd>  | <kbd>Control</kbd>+<kbd>E</kbd> | Move the insertion point to the beginning of the line |
 
+More help: <https://support.apple.com/guide/terminal/keyboard-shortcuts-trmlshtcts/mac>
+
 ### Add Mapping
 
 ![Screenshot: Terminal - Add Mapping](./terminal-mapping.png)
@@ -215,8 +232,6 @@ Remap Keyboad shortcuts:
 
 ![Screenshot: Terminal - Keyboard](./terminal-keyboard.png)
 
-
-More help: <https://support.apple.com/guide/terminal/keyboard-shortcuts-trmlshtcts/mac>
 
 ## Themes
 
