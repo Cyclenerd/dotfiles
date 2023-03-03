@@ -198,6 +198,26 @@ Link: <https://apps.apple.com/de/app/greenshot/id1103915944?l=en&mt=12>
 Link: <https://apps.apple.com/de/app/dict-cc-dictionary/id521791825?l=en>
 
 
+## Terminal
+
+Remap Keyboad shortcuts:
+
+| Custom          | Default                         | Action                                                |
+|-----------------|---------------------------------|-------------------------------------------------------|
+| <kbd>Home</kbd> | <kbd>Control</kbd>+<kbd>A</kbd> | Move the insertion point to the beginning of the line |
+| <kbd>End</kbd>  | <kbd>Control</kbd>+<kbd>E</kbd> | Move the insertion point to the beginning of the line |
+
+### Add Mapping
+
+![Screenshot: Terminal - Add Mapping](./terminal-mapping.png)
+
+### Mapping
+
+![Screenshot: Terminal - Keyboard](./terminal-keyboard.png)
+
+
+More help: <https://support.apple.com/guide/terminal/keyboard-shortcuts-trmlshtcts/mac>
+
 ## Themes
 
 ### Source Code Pro
