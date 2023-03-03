@@ -27,6 +27,7 @@ brew install imagemagick jhead
 # Perl
 brew install perl
 PERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib
+brew install cpanminus pkg-config
 ```
 
 
@@ -74,6 +75,7 @@ Open Settings (<kbd>Cmd</kbd>+<kbd>,</kbd>) and copy JSON settings: [vscode.json
 Install extensions:
 ```shell
 code --install-extension dracula-theme.theme-dracula
+code --install-extension install vscode-icons
 code --install-extension samosad.tt
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension hashicorp.terraform
@@ -83,6 +85,12 @@ code --install-extension mechatroner.rainbow-csv
 code --install-extension redhat.vscode-yaml
 code --install-extension ms-vscode-remote.remote-ssh
 code --install-extension GitLab.gitlab-workflow
+```
+
+To install a extension you can also just execute the following command in the Command Palette of Visual Studio Code:
+
+```text
+ext install vscode-icons
 ```
 
 ### LibreOffice
