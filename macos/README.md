@@ -2,6 +2,7 @@
 
 My notes and scripts to quickly configure a new Mac.
 
+
 ## Full Disk Access
 
 ⚠️ Some command requires to grant full disk access to the `Terminal.app`.
@@ -9,6 +10,13 @@ My notes and scripts to quickly configure a new Mac.
 Edit: System Preferences → Privacy & Security → Full Disk Access
 
 ![Screenshot: Full Disk Access](./full_disk_access.png)
+
+
+## FileVault
+
+Enable disk encrypting.
+
+![Screenshot: FileVault](./filevault.png)
 
 
 ## Homebrew
@@ -232,3 +240,4 @@ For most settings I have saved the macOS `defaults`.
 You can find them in the [defaults](./defaults/) folder.
 
 Run the scripts only after all programs, themes and fonts are installed.
+
