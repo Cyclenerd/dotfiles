@@ -4,6 +4,12 @@
 # Author: Nils Knieling - https://github.com/Cyclenerd/dotfiles
 #
 
+# Enable Dark Mode
+defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
+
+# Set Accent color to green
+defaults write NSGlobalDomain AppleAccentColor -int "3"
+
 # Set highlight color to green
 defaults write NSGlobalDomain AppleHighlightColor -string "0.752941 0.964706 0.678431 Green"
 
