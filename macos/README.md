@@ -38,6 +38,7 @@ brew install git
 brew install nano sqlite jq shellcheck flake8
 brew install ansible terraform terraform-docs
 brew install imagemagick jhead
+brew install skopeo
 # Perl
 brew install perl
 PERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib
