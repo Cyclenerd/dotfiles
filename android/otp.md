@@ -17,8 +17,10 @@ My personal ranking:
     * Data survived several moves to new smartphones
     * Unfortunately no longer in active development (since 2021)
 1. [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)
-    * Also hold many of the required functions
+    * Also provides many of the required functions
     * Unfortunately not OpenSource and only Cloud backup
+    * Official product from Microsoft
+    * Also available for iOS
 1. [FreeOTP Authenticator](https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp)
     * Here I really miss a filter to find my many entries quickly
 1. [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
