@@ -25,4 +25,4 @@ My personal ranking:
     * Here I really miss a filter to find my many entries quickly
 1. [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
     * Far too minimalistic
-    * Since there is a super alternatives, I can not recommend this app at all
+    * Since there are super alternatives, I can not recommend this app at all
