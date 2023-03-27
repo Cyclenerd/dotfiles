@@ -46,6 +46,8 @@ brew install neofetch
 brew install perl
 PERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib
 brew install cpanminus pkg-config
+# Go
+brew install golang
 ```
 
 
