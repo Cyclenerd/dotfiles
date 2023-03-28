@@ -14,7 +14,6 @@ My personal ranking:
 
 1. [Aegis Authenticator - 2FA App](https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis)
     * All required (and even more) functions
-    * 
     * In active development (5,3k GitHub stars)
 1. [andOTP - OTP Authenticator](https://play.google.com/store/apps/details?id=org.shadowice.flocke.andotp)
     * All required functions
@@ -39,3 +38,8 @@ More for Aegis Authenticator:
 * [Icons](https://aegis-icons.github.io/)
 * [Simple Icons](https://github.com/alexbakker/aegis-simple-icons)
 * [CLI](https://github.com/navilg/aegis-cli)
+
+## andOTP
+
+* [XDA post from Jakob](https://forum.xda-developers.com/t/app-4-4-open-source-andotp-open-source-two-factor-authentication-for-android.3636993/post-87021655)
+* [CLI](https://github.com/RijulGulati/go-andotp)
