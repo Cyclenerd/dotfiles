@@ -258,8 +258,8 @@ mkdir -p ~/Pictures/Icons
 
 [Visual Studio Code](https://github.com/dhanishgajjar/vscode-icons):
 ```shell
-curl -L "https://github.com/dhanishgajjar/vscode-icons/raw/master/icns/dracula.icns" \
-     -o ~/Pictures/Icons/vscode-dracula.icns
+curl -L "https://github.com/dhanishgajjar/vscode-icons/raw/master/icns/default_dark.icns" \
+     -o ~/Pictures/Icons/vscode-dark.icns
 ```
 
 [Terminal](https://github.com/dhanishgajjar/terminal-icons):
@@ -268,7 +268,7 @@ curl -L "https://github.com/dhanishgajjar/terminal-icons/raw/master/icns/dracula
      -o ~/Pictures/Icons/termianl-dracula.icns
 ```
 
-[Spotify](https://macosicons.com/#/spotify)
+[Spotify](https://macosicons.com/#/spotify):
 ```shell
 curl -L "https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/7417b4c7be29b87dff43125f84f54b57_h4VOK4iId2.icns" \
      -o ~/Pictures/Icons/spotify.icns
