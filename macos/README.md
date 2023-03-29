@@ -155,6 +155,7 @@ Watch out! Not all apps are optimized for the Apple Silicon CPU!
 * [Commander One PRO](https://apps.apple.com/de/app/commander-one-pro-ftp-client/id1035237815?l=en&mt=12>)
 * [The Unarchiver](https://apps.apple.com/de/app/the-unarchiver/id425424353?l=en&mt=12)
 * [Greenshot](https://apps.apple.com/de/app/greenshot/id1103915944?l=en&mt=12)
+* [Acorn7](https://apps.apple.com/de/app/acorn-7/id1547371478?l=en&mt=12)
 * [dict.cc plus](https://apps.apple.com/de/app/dict-cc-dictionary/id521791825?l=en)
 
 
@@ -272,6 +273,12 @@ curl -L "https://github.com/dhanishgajjar/terminal-icons/raw/master/icns/dracula
 ```shell
 curl -L "https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/7417b4c7be29b87dff43125f84f54b57_h4VOK4iId2.icns" \
      -o ~/Pictures/Icons/spotify.icns
+```
+
+[Acorn](https://macosicons.com/#/acorn):
+```shell
+curl -L "https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/130b72e2e176308ca06e4abe2ae50877_I7oEhOYBGb.icns" \
+     -o ~/Pictures/Icons/acorn.icns
 ```
 
 More Icons: <https://macosicons.com/>
