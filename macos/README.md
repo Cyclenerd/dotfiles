@@ -249,36 +249,3 @@ For most settings I have saved the macOS `defaults`.
 You can find them in the [defaults](./defaults/) folder.
 
 Run the scripts only after all programs, themes and fonts are installed.
-
-## Icons
-
-Directory:
-```shell
-mkdir -p ~/Pictures/Icons
-```
-
-[Visual Studio Code](https://github.com/dhanishgajjar/vscode-icons):
-```shell
-curl -L "https://github.com/dhanishgajjar/vscode-icons/raw/master/icns/default_dark.icns" \
-     -o ~/Pictures/Icons/vscode-dark.icns
-```
-
-[Terminal](https://github.com/dhanishgajjar/terminal-icons):
-```shell
-curl -L "https://github.com/dhanishgajjar/terminal-icons/raw/master/icns/dracula.icns" \
-     -o ~/Pictures/Icons/termianl-dracula.icns
-```
-
-[Spotify](https://macosicons.com/#/spotify):
-```shell
-curl -L "https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/7417b4c7be29b87dff43125f84f54b57_h4VOK4iId2.icns" \
-     -o ~/Pictures/Icons/spotify.icns
-```
-
-[Acorn](https://macosicons.com/#/acorn):
-```shell
-curl -L "https://parsefiles.back4app.com/JPaQcFfEEQ1ePBxbf6wvzkPMEqKYHhPYv8boI1Rc/130b72e2e176308ca06e4abe2ae50877_I7oEhOYBGb.icns" \
-     -o ~/Pictures/Icons/acorn.icns
-```
-
-More Icons: <https://macosicons.com/>
