@@ -42,6 +42,7 @@ brew install ansible terraform terraform-docs
 brew install imagemagick jhead
 brew install skopeo
 brew install neofetch
+brew install yt-dlp
 # Perl
 brew install perl
 PERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib
