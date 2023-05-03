@@ -49,6 +49,8 @@ PERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib
 brew install cpanminus pkg-config
 # Go
 brew install golang
+# PHP
+brew install php composer
 ```
 
 
@@ -134,6 +136,7 @@ Watch out! Not all apps are optimized for the Apple Silicon CPU!
 | [LibreOffice](https://www.libreoffice.org/download/download-libreoffice/) | ✅ |
 | [Adobe Acrobat Reader](https://www.adobe.com/acrobat/pdf-reader.html) | ✅ |
 | [Sourcetree](https://www.sourcetreeapp.com/) | ✅ |
+| [Postman](https://www.postman.com/downloads/) | ✅ |
 | [Audacity](https://www.audacityteam.org/download/mac/) | ✅ |
 | [Elgato Control Center](https://www.elgato.com/en/downloads) | ✅ |
 | [Geekbench 6](https://www.geekbench.com/download/) | ✅ |
