@@ -40,7 +40,7 @@ brew install git
 brew install nano sqlite jq shellcheck flake8
 brew install ansible terraform terraform-docs
 brew install imagemagick jhead
-brew install skopeo
+brew install skopeo # CLI tool for various operations on container images and image repositories
 brew install neofetch
 brew install yt-dlp
 # Perl
@@ -48,7 +48,7 @@ brew install perl
 PERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib
 brew install cpanminus pkg-config
 # Go
-brew install golang
+brew install golang golangci-lint
 # PHP
 brew install php composer
 ```
@@ -88,17 +88,17 @@ Open Settings (<kbd>Cmd</kbd>+<kbd>,</kbd>) and copy JSON settings: [vscode.json
 Install extensions:
 ```shell
 code --install-extension dracula-theme.theme-dracula
-code --install-extension install vscode-icons
-code --install-extension samosad.tt
-code --install-extension ms-azuretools.vscode-docker
-code --install-extension hashicorp.terraform
-code --install-extension redhat.ansible
-code --install-extension ZainChen.json
 code --install-extension euskadi31.json-pretty-printer
-code --install-extension mechatroner.rainbow-csv
-code --install-extension redhat.vscode-yaml
-code --install-extension ms-vscode-remote.remote-ssh
 code --install-extension GitLab.gitlab-workflow
+code --install-extension hashicorp.terraform
+code --install-extension install vscode-icons
+code --install-extension mechatroner.rainbow-csv
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension redhat.ansible
+code --install-extension redhat.vscode-yaml
+code --install-extension samosad.tt
+code --install-extension ZainChen.json
 ```
 
 To install a extension you can also just execute the following command in the Command Palette of Visual Studio Code:
@@ -131,25 +131,28 @@ Watch out! Not all apps are optimized for the Apple Silicon CPU!
 
 | Software | Apple Silicon |
 |----------|---------------|
-| [KeePassXC](https://keepassxc.org/download/#mac) | ✅ |
-| [Spotify](https://www.spotify.com/de/download/mac/>) | ✅ |
-| [LibreOffice](https://www.libreoffice.org/download/download-libreoffice/) | ✅ |
 | [Adobe Acrobat Reader](https://www.adobe.com/acrobat/pdf-reader.html) | ✅ |
-| [Sourcetree](https://www.sourcetreeapp.com/) | ✅ |
-| [Postman](https://www.postman.com/downloads/) | ✅ |
 | [Audacity](https://www.audacityteam.org/download/mac/) | ✅ |
+| [Balena Etcher](https://etcher.balena.io/#download-etcher) | ❌ |
 | [Elgato Control Center](https://www.elgato.com/en/downloads) | ✅ |
+| [Garmin Express](https://www.garmin.com/en-US/software/express/mac/>) | ❌ |
 | [Geekbench 6](https://www.geekbench.com/download/) | ✅ |
+| [GoldenCheetah](http://www.goldencheetah.org/#section-download) | ❌ |
+| [Google Earth Pro](https://www.google.com/earth/versions/#download-pro) | ❌ |
+| [KeePassXC](https://keepassxc.org/download/#mac) | ✅ |
+| [LibreOffice](https://www.libreoffice.org/download/download-libreoffice/) | ✅ |
+| [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) | ✅ |
+| [Minecraft](https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc) | ❌ |
 | [OBS](https://obsproject.com/) | ✅ |
-| [VLC](https://www.videolan.org/vlc/) | ✅ |
-| [Shotcut](https://www.shotcut.org/download/) | ✅ |
 | [Poedit](https://poedit.net/download>) | ✅ |
+| [Postman](https://www.postman.com/downloads/) | ✅ |
 | [qFlipper](https://flipperzero.one/update) | ✅ |
 | [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases/latest) | ✅ |
-| [GoldenCheetah](http://www.goldencheetah.org/#section-download) | ❌ |
-| [Garmin Express](https://www.garmin.com/en-US/software/express/mac/>) | ❌ |
-| [Google Earth Pro](https://www.google.com/earth/versions/#download-pro>) | ❌ |
-| [Logi Options+](https://www.logitech.com/en-us/software/logi-options-plus.html) | ✅ |
+| [Raspberry Pi Imager](https://www.raspberrypi.com/software/) | ❌ |
+| [Shotcut](https://www.shotcut.org/download/) | ✅ |
+| [Sourcetree](https://www.sourcetreeapp.com/) | ✅ |
+| [Spotify](https://www.spotify.com/de/download/mac/>) | ✅ |
+| [VLC](https://www.videolan.org/vlc/) | ✅ |
 | <s>[Logitech G HUB](https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.zip)</s> | ❌ |
 
 ### App Store
@@ -161,7 +164,6 @@ Watch out! Not all apps are optimized for the Apple Silicon CPU!
 * [Greenshot](https://apps.apple.com/de/app/greenshot/id1103915944?l=en&mt=12)
 * [Acorn7](https://apps.apple.com/de/app/acorn-7/id1547371478?l=en&mt=12)
 * [dict.cc plus](https://apps.apple.com/de/app/dict-cc-dictionary/id521791825?l=en)
-
 
 ## Terminal
 
