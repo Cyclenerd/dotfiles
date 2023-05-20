@@ -31,5 +31,12 @@
         "debian": "linux"
     },
     "editor.fontLigatures": "'ccmp' off",
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "git.confirmSync": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "explorer.confirmDelete": false,
+    "workbench.iconTheme": "vscode-icons",
+    "git.openRepositoryInParentFolders": "never",
+    "yaml.maxItemsComputed": 250000,
+    "vsicons.dontShowNewVersionMessage": true
 }
