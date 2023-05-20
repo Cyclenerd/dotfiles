@@ -9,6 +9,9 @@ export HOMEBREW_NO_ENV_HINTS="true"
 # Use brewed curl
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
+# Use brewed Go
+export PATH="$HOME/go/bin:$PATH"
+
 # Ansible vault password
 export ANSIBLE_VAULT_PASSWORD_FILE="/Users/nils/.ansible/ansible-vault-secret-password"
 
@@ -25,3 +28,4 @@ eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
 alias ls='ls --color'
 alias ll='ls -lah'
 alias plackup='plackup --host="127.0.0.1"'
+alias gcosts='/Users/nils/Developer/google-cloud-pricing-cost-calculator/gcosts/gcosts --pricing /Users/nils/Developer/google-cloud-pricing-cost-calculator/build/pricing.yml
