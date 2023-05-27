@@ -20,6 +20,31 @@ Enable disk encrypting.
 
 ![Screenshot: FileVault](./filevault.png)
 
+## SSH
+
+The book [Practical Cryptography With Go](https://leanpub.com/gocrypto/read#leanpub-auto-chapter-5-digital-signatures) suggests that [ED25519](https://ed25519.cr.yp.to/) keys are more secure and performant than RSA keys.
+
+You can create and configure an ED25519 key with the following command:
+
+```
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+ssh-keygen -t ed25519
+```
+
+Add your SSH private key to the `ssh-agent` and store your passphrase in the keychain.
+
+```shell
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+```
+
+Add to `~/.ssh/config`:
+
+```text
+# enable integration between Keychain and SSH Agent  
+UseKeychain yes
+AddKeysToAgent yes
+```
 
 ## Homebrew
 
