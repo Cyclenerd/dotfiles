@@ -28,4 +28,4 @@ eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
 alias ls='ls --color'
 alias ll='ls -lah'
 alias plackup='plackup --host="127.0.0.1"'
-alias gcosts='/Users/nils/Developer/google-cloud-pricing-cost-calculator/gcosts/gcosts --pricing /Users/nils/Developer/google-cloud-pricing-cost-calculator/build/pricing.yml
+alias gcosts='/Users/nils/Developer/google-cloud-pricing-cost-calculator/gcosts/gcosts --pricing /Users/nils/Developer/google-cloud-pricing-cost-calculator/build/pricing.yml'

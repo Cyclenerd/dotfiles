@@ -78,6 +78,14 @@ brew install golang golangci-lint
 brew install php composer
 ```
 
+#### More Packages
+
+`gopls` (pronounced "Go please") the [Go language server](https://pkg.go.dev/golang.org/x/tools/gopls#section-readme):
+
+```shell
+go install golang.org/x/tools/gopls@latest
+```
+
 
 ## Applications
 
