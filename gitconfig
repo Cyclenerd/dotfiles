@@ -1,5 +1,7 @@
 [user]
-        email = git@nkn-it.de
-        name = Nils
+	email = git@nkn-it.de
+	name = Nils
 [pull]
-        rebase = true
+	rebase = true
+[core]
+	excludesFile = ~/.gitignore_global
