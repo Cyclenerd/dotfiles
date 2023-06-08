@@ -1,7 +1,15 @@
 [user]
-	email = git@nkn-it.de
+	email = git@cyclenerd.de
 	name = Nils
+[core]
+	excludesfile = /Users/nils/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/nils/.stCommitMsg
 [pull]
 	rebase = true
-[core]
-	excludesFile = ~/.gitignore_global

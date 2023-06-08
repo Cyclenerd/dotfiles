@@ -125,7 +125,7 @@ code --install-extension euskadi31.json-pretty-printer
 code --install-extension GitLab.gitlab-workflow
 code --install-extension golang.Go
 code --install-extension hashicorp.terraform
-code --install-extension install vscode-icons
+code --install-extension vscode-icons
 code --install-extension mechatroner.rainbow-csv
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-vscode-remote.remote-ssh
