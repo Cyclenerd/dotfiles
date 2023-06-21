@@ -66,6 +66,7 @@ brew install nano sqlite jq shellcheck flake8
 brew install ansible terraform terraform-docs
 brew install imagemagick jhead
 brew install skopeo # CLI tool for various operations on container images and image repositories
+brew install mtr
 brew install neofetch
 brew install yt-dlp
 # Perl
