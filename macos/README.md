@@ -170,6 +170,7 @@ Watch out! Not all apps are optimized for the Apple Silicon CPU!
 | [Audacity](https://www.audacityteam.org/download/mac/) | ✅ |
 | [Balena Etcher](https://etcher.balena.io/#download-etcher) | ❌ |
 | [Elgato Control Center](https://www.elgato.com/en/downloads) | ✅ |
+| [Elgato Camera Hub](https://www.elgato.com/en/downloads) | ✅ |
 | [Garmin Express](https://www.garmin.com/en-US/software/express/mac/>) | ❌ |
 | [Geekbench 6](https://www.geekbench.com/download/) | ✅ |
 | [GoldenCheetah](http://www.goldencheetah.org/#section-download) | ❌ |
