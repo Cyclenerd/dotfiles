@@ -63,11 +63,11 @@ brew install curl wget
 brew install htop
 brew install git
 brew install nano sqlite jq shellcheck flake8
-brew install ansible terraform terraform-docs
+brew install ansible terraform terraform-docs tfsec tflint
 brew install imagemagick jhead
 brew install skopeo # CLI tool for various operations on container images and image repositories
 brew install mtr
-brew install neofetch
+brew install neofetch figlet
 brew install yt-dlp
 # Perl
 brew install perl
