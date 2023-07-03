@@ -291,3 +291,19 @@ For most settings I have saved the macOS `defaults`.
 You can find them in the [defaults](./defaults/) folder.
 
 Run the scripts only after all programs, themes and fonts are installed.
+
+## Keyboard Shortcuts
+
+System Preferences > Keyboard > Shortcuts > App Shortucts, click on `+`, keep 'All applications', enter exact text into 'Menu Title' and assign shortcut in 'Keyboard Shortcut'.
+
+
+* `Tile Window to Left of Screen` : <kbd>⌃</kbd> <kbd>⌘</kbd> <kbd>←</kbd>
+* `Tile Window to Right of Screen` : <kbd>⌃</kbd> <kbd>⌘</kbd> <kbd>→</kbd>
+* `Move Window to Left Side of Screen` : <kbd>⌃</kbd> <kbd>⌘</kbd> <kbd>L</kbd>
+* `Move Window to Right Side of Screen` : <kbd>⌃</kbd> <kbd>⌘</kbd> <kbd>R</kbd>
+
+![Screenshot: Keyboard Shortcuts](./keyboard-shortcuts.png)
+
+Note:
+There is also already a built-in keyboard shortcut to toggle full screen: <kbd>⌃</kbd> <kbd>⌘</kbd> <kbd>F</kbd>
+
