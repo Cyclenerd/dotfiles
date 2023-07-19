@@ -61,7 +61,7 @@ Install the missing package manager for macOS:
 ```shell
 brew install curl wget
 brew install htop btop
-brew install git
+brew install git git-lfs && git lfs install
 brew install nano sqlite jq shellcheck flake8 cloc
 brew install ansible terraform terraform-docs tfsec tflint
 brew install imagemagick jhead
