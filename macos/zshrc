@@ -2,8 +2,9 @@
 PS1='%F{green}%n@%m%f:%F{magenta}%~%f  '
 
 # Hoembrew configuration
+# https://docs.brew.sh/Analytics
+export HOMEBREW_NO_ANALYTICS=1
 # https://docs.brew.sh/Manpage
-export HOMEBREW_NO_GOOGLE_ANALYTICS="true"
 export HOMEBREW_NO_ENV_HINTS="true"
 
 # Use brewed curl
