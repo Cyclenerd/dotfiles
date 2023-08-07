@@ -66,6 +66,7 @@ brew install nano sqlite jq shellcheck flake8 cloc
 brew install ansible terraform terraform-docs tfsec tflint
 brew install imagemagick jhead
 brew install md5sha1sum
+brew install podman && brew install --cask podman-desktop
 brew install skopeo # CLI tool for various operations on container images and image repositories
 brew install mtr telnet
 brew install neofetch figlet
