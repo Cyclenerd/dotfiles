@@ -63,7 +63,7 @@ brew install curl wget
 brew install htop btop
 brew install git git-lfs && git lfs install
 brew install nano sqlite jq shellcheck flake8 cloc
-brew install ansible terraform terraform-docs tfsec tflint
+brew install ansible terraform terraform-docs tfsec tflint packer
 brew install imagemagick jhead
 brew install md5sha1sum
 brew install podman && brew install --cask podman-desktop
