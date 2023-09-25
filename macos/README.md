@@ -220,11 +220,11 @@ More help: <https://support.apple.com/guide/terminal/keyboard-shortcuts-trmlshtc
 
 ### Add Mapping
 
-![Screenshot: Terminal - Add Mapping](./terminal-add-mapping.png?v1)
+![Screenshot: Terminal - Add Mapping](./terminal-add-mapping.png)
 
 ### Mapping
 
-![Screenshot: Terminal - Keyboard](./terminal-keyboard.png?v1)
+![Screenshot: Terminal - Keyboard](./terminal-keyboard.png)
 
 
 ## Themes / Fonts
