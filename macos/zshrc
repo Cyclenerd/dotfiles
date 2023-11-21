@@ -10,6 +10,9 @@ export HOMEBREW_NO_ENV_HINTS="true"
 # Use brewed curl
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
+# Python
+export PATH="$HOME/Library/Python/3.11/bin:$PATH"
+
 # Use brewed Go
 export PATH="$HOME/go/bin:$PATH"
 

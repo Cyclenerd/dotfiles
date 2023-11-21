@@ -63,7 +63,6 @@ brew install curl wget
 brew install htop btop
 brew install git git-lfs && git lfs install
 brew install nano sqlite jq shellcheck flake8 cloc
-brew install ansible ansible-lint yamllint
 brew install terraform terraform-docs tfsec tflint packer vault
 brew install imagemagick jhead
 brew install md5sha1sum
@@ -81,6 +80,20 @@ brew install cpanminus pkg-config
 brew install golang golangci-lint
 # PHP
 brew install php composer
+```
+
+#### Ansible
+
+Install:
+```bash
+python3 -m pip install --user ansible
+python3 -m pip install --user ansible-lint
+```
+
+Upgrade:
+```bash
+python3 -m pip install --upgrade --user ansible
+python3 -m pip install --upgrade --user ansible-lint
 ```
 
 #### More Packages
