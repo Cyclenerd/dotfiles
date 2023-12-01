@@ -80,6 +80,8 @@ brew install cpanminus pkg-config
 brew install golang golangci-lint
 # PHP
 brew install php composer
+# Ruby
+brew install ruby
 ```
 
 #### Ansible
@@ -173,6 +175,79 @@ Website: <https://sqlitebrowser.org/dl/>
 
 ```shell
 brew install --cask db-browser-for-sqlite
+```
+
+### XCode
+
+Download: <https://itunes.apple.com/us/app/xcode/id497799835>
+
+```bash
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+sudo xcodebuild -runFirstLaunch
+sudo xcodebuild -license
+xcodebuild -downloadPlatform iOS
+open -a Simulator
+```
+
+### Android Studio
+
+Download: <https://developer.android.com/studio>
+
+Download and install also [`sdkmanager`](https://developer.android.com/tools/sdkmanager) via the Android SDK Command-Line Tools package:
+
+1. Download the latest "command line tools only" package from the [Android Studio downloads page](https://developer.android.com/studio).
+1. Unzip into Android SDK directory
+    ```bash
+    cd "$HOME/Library/Android/sdk"
+    unzip ~/Downloads/commandlinetools-mac-10406996_latest.zip
+    ```
+1. Move the original `cmdline-tools` directory contents into the newly created `latest` directory:
+    ```bash
+    cd cmdline-tools
+    mkdir -p latest
+    mv "NOTICE.txt" "latest/"
+    mv "bin" "latest/"
+    mv "lib" "latest/"
+    mv "source.properties" "latest/"
+    ```
+
+### Flutter
+
+Download:
+<https://docs.flutter.dev/get-started/install/macos>
+
+Install:
+```bash
+cd "$HOME"
+unzip ~/Downloads/flutter_macos_arm64_3.16.2-stable.zip
+```
+
+[CocoaPods](https://guides.cocoapods.org/using/getting-started.html#installation):
+```bash
+gem install cocoapods --user-install
+gem which cocoapods
+```
+
+Test:
+
+```bash
+flutter doctor --android-licenses
+flutter doctor
+```
+
+OK:
+```text
+Doctor summary (to see all details, run flutter doctor -v):
+[✓] Flutter (Channel stable, 3.16.2, on macOS 13.6.1 22G313 darwin-arm64, locale en-US)
+[✓] Android toolchain - develop for Android devices (Android SDK version 34.0.0)
+[✓] Xcode - develop for iOS and macOS (Xcode 15.0.1)
+[✓] Chrome - develop for the web
+[✓] Android Studio (version 2023.1)
+[✓] VS Code (version 1.84.2)
+[✓] Connected device (2 available)
+[✓] Network resources
+
+• No issues found!
 ```
 
 ### Manually
