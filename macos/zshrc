@@ -16,6 +16,24 @@ export PATH="$HOME/Library/Python/3.11/bin:$PATH"
 # Use brewed Go
 export PATH="$HOME/go/bin:$PATH"
 
+# Use brewed Ruby
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
+
+# Android Studio
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
+export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
+
+# Flutter
+export PATH="$HOME/flutter/bin:$PATH"
+# CocoaPods (for Flutter)
+export GEM_HOME="$HOME/.gem"
+export PATH="$GEM_HOME/bin:$PATH"
+export PATH="$GEM_HOME/ruby/3.2.0/bin:$PATH"
+
 # Ansible vault password
 export ANSIBLE_VAULT_PASSWORD_FILE="/Users/nils/.ansible/ansible-vault-secret-password"
 
