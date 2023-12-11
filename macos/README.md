@@ -178,6 +178,23 @@ Website: <https://docs.aws.amazon.com/cli/latest/userguide/getting-started-insta
 brew install awscli
 ```
 
+#### aws-azure-login
+
+Website: <https://github.com/aws-azure-login/aws-azure-login>
+
+```shell
+sudo npm install -g aws-azure-login --unsafe-perm
+```
+
+Login:
+
+```shell
+aws configure
+aws-azure-login --configure
+aws-azure-login
+aws sts get-caller-identit
+```
+
 ### DB Browser for SQLite
 
 Website: <https://sqlitebrowser.org/dl/>
