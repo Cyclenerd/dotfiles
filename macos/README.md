@@ -169,6 +169,15 @@ Website: <https://cloud.google.com/sdk/docs/install>
 brew install --cask google-cloud-sdk
 ```
 
+
+### AWS CLI
+
+Website: <https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html>
+
+```shell
+brew install awscli
+```
+
 ### DB Browser for SQLite
 
 Website: <https://sqlitebrowser.org/dl/>
