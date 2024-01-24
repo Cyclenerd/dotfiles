@@ -302,7 +302,7 @@ Watch out! Not all apps are optimized for the Apple Silicon CPU!
 | [Postman](https://www.postman.com/downloads/) | ✅ |
 | [qFlipper](https://flipperzero.one/update) | ✅ |
 | [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases/latest) | ✅ |
-| [Raspberry Pi Imager](https://www.raspberrypi.com/software/) | ❌ |
+| [Raspberry Pi Imager](https://www.raspberrypi.com/software/) | ✅ |
 | [Shotcut](https://www.shotcut.org/download/) | ✅ |
 | [Sourcetree](https://www.sourcetreeapp.com/) | ✅ |
 | [Spotify](https://www.spotify.com/de/download/mac/) | ✅ |
