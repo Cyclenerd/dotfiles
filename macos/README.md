@@ -195,6 +195,14 @@ aws-azure-login
 aws sts get-caller-identit
 ```
 
+### DBeaver (Universal Database Tool)
+
+Website: <https://dbeaver.io/>
+
+```shell
+brew install --cask dbeaver-community
+```
+
 ### DB Browser for SQLite
 
 Website: <https://sqlitebrowser.org/dl/>
