@@ -292,6 +292,7 @@ Watch out! Not all apps are optimized for the Apple Silicon CPU!
 
 | Software | Apple Silicon |
 |----------|---------------|
+| [shottr (Screenshot tool)](https://shottr.cc/) | ✅ |
 | [Adobe Acrobat Reader](https://www.adobe.com/acrobat/pdf-reader.html) | ✅ |
 | [Audacity](https://www.audacityteam.org/download/mac/) | ✅ |
 | [Balena Etcher](https://etcher.balena.io/#download-etcher) | ❌ |
@@ -323,7 +324,6 @@ Watch out! Not all apps are optimized for the Apple Silicon CPU!
     * FileMerge (opendiff) is bundled with Xcode. "Show Package Contents" of Xcode -> Contents -> Applications -> FileMerge.app
 * [Commander One PRO](https://apps.apple.com/de/app/commander-one-pro-ftp-client/id1035237815?l=en&mt=12)
 * [The Unarchiver](https://apps.apple.com/de/app/the-unarchiver/id425424353?l=en&mt=12)
-* [Greenshot](https://apps.apple.com/de/app/greenshot/id1103915944?l=en&mt=12)
 * [Acorn7](https://apps.apple.com/de/app/acorn-7/id1547371478?l=en&mt=12)
 * [dict.cc plus](https://apps.apple.com/de/app/dict-cc-dictionary/id521791825?l=en)
 
