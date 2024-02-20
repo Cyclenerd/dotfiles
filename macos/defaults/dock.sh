@@ -13,8 +13,8 @@ defaults write com.apple.dock minimize-to-application -bool true
 defaults write com.apple.dock "mineffect" -string "scale"
 
 # Icon size
-defaults write com.apple.dock "tilesize" -int "48"
-defaults write com.apple.dock "largesize" -int "48"
+defaults write com.apple.dock "tilesize" -int "32"
+defaults write com.apple.dock "largesize" -int "32"
 
 # Autohide the Dock when the mouse is out
 defaults write com.apple.dock "autohide" -bool "true"
