@@ -73,6 +73,7 @@ brew install mtr telnet
 brew install neofetch figlet
 brew install yt-dlp
 brew install rclone # https://rclone.org/
+brew install cmake
 # Perl
 brew install perl
 PERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib
