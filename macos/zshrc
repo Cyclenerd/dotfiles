@@ -46,6 +46,9 @@ source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completio
 # Use brewed Perl
 eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
 
+# Use brewed Java
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
 # Aliases
 alias show-all-files-on='defaults write com.apple.finder "AppleShowAllFiles" -bool "true" && killall Finder'
 alias show-all-files-off='defaults write com.apple.finder "AppleShowAllFiles" -bool "false" && killall Finder'

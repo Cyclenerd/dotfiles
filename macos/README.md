@@ -84,6 +84,8 @@ brew install golang golangci-lint
 brew install php composer
 # Ruby
 brew install ruby
+# Java
+brew install openjdk
 ```
 
 #### Ansible
