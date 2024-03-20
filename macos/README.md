@@ -86,6 +86,10 @@ brew install php composer
 brew install ruby
 # Java
 brew install openjdk
+# noTunes - prevent iTunes or Apple Music from launching
+# https://github.com/tombonez/noTunes
+# Add to "Open at Login"
+brew install --cask notunes
 ```
 
 #### Ansible
