@@ -292,6 +292,22 @@ Doctor summary (to see all details, run flutter doctor -v):
 • No issues found!
 ```
 
+### FreeCAD
+
+Website: <https://www.freecad.org/>
+
+```bash
+brew install --cask freecad
+```
+
+### Blender
+
+Website: <https://www.blender.org/>
+
+```bash
+brew install --cask blender
+```
+
 ### Manually
 
 Watch out! Not all apps are optimized for the Apple Silicon CPU!
