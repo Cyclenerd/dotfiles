@@ -196,14 +196,8 @@ podman run \
     --name konsole konsole:test
 ```
 
-Get local IP (`MAC-IP`):
+Example: <https://github.com/Cyclenerd/toolbox/tree/master/xquartz#readme>
 
-```bash
-# LAN
-ipconfig getifaddr en0
-# WiFi
-ipconfig getifaddr en1
-```
 ### Google Cloud CLI
 
 Website: <https://cloud.google.com/sdk/docs/install>
