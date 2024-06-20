@@ -49,6 +49,21 @@ eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
 # Use brewed Java
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
+# Terraform
+alias tf='terraform'
+alias tfa='terraform apply'
+alias tfc='terraform console'
+alias tfd='terraform destroy'
+alias tff='terraform fmt'
+alias tfi='terraform init'
+alias tfiu='terraform init -upgrade'
+alias tfo='terraform output'
+alias tfp='terraform plan'
+alias tfv='terraform validate'
+alias tfs='terraform state'
+alias tft='terraform test'
+alias tfsh='terraform show'
+
 # Aliases
 alias show-all-files-on='defaults write com.apple.finder "AppleShowAllFiles" -bool "true" && killall Finder'
 alias show-all-files-off='defaults write com.apple.finder "AppleShowAllFiles" -bool "false" && killall Finder'
