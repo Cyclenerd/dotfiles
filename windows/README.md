@@ -23,3 +23,11 @@ Modern, fast, efficient, powerful, and productive terminal application for users
 About: <https://aka.ms/terminal>
 
 * `terminal.json` : My Windows Terminal settings
+
+## TortoiseGit
+
+TortoiseGit is a Windows Shell Interface to Git and based on TortoiseSVN.
+It's open source and can fully be build with freely available software.
+TortoiseGit provides overlay icons showing the file status, a powerful context menu for Git and much more!
+
+About: <https://tortoisegit.org/about/>
