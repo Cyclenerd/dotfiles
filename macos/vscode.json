@@ -5,7 +5,6 @@
     "editor.renderControlCharacters": true,
     "editor.fontSize": 16,
     "editor.fontFamily": "'Source Code Pro', Monaco, 'Courier New', monospace",
-    "workbench.colorTheme": "Dracula",
     "workbench.colorCustomizations": {
         "tab.border": "#1e1f1c",
         "tab.inactiveBackground": "#1e1f1c",
@@ -21,7 +20,8 @@
     "files.eol": "\n",
     "git.enableSmartCommit": true,
     "files.associations": {
-        "*.tt2": "tt"
+        "*.tt2": "tt",
+        "*.yaml": "yaml"
     },
     "workbench.editor.enablePreview": false,
     "problems.decorations.enabled": false,
@@ -38,5 +38,18 @@
     "workbench.iconTheme": "vscode-icons",
     "git.openRepositoryInParentFolders": "never",
     "yaml.maxItemsComputed": 250000,
-    "vsicons.dontShowNewVersionMessage": true
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.colorTheme": "Dracula Theme",
+    "git.autofetch": true,
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontFamily": "Source Code Pro",
+    "go.toolsManagement.autoUpdate": true,
+    "cloudcode.duetAI.enable": false,
+    "cloudcode.duetAI.inlineSuggestions.enableAuto": false,
+    "dart.flutterSdkPath": "/Users/nils/flutter",
+    "editor.stickyScroll.enabled": false,
+    "yaml.schemaStore.enable": false,
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    }
 }
