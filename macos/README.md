@@ -153,8 +153,10 @@ Open Settings (<kbd>Cmd</kbd>+<kbd>,</kbd>) and copy JSON settings: [vscode.json
 
 Install extensions:
 ```shell
+code --install-extension 4ops.packer
 code --install-extension bierner.markdown-mermaid
 code --install-extension dracula-theme.theme-dracula
+code --install-extension EditorConfig.EditorConfig
 code --install-extension euskadi31.json-pretty-printer
 code --install-extension GitLab.gitlab-workflow
 code --install-extension golang.Go
