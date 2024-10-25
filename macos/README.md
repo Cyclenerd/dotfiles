@@ -70,7 +70,7 @@ brew install terraform-docs tfsec tflint packer vault sentinel opa
 brew install imagemagick jhead
 brew install md5sha1sum
 brew install kubernetes-cli
-brew install podman && brew install --cask podman-desktop
+brew install podman podman-compose && brew install --cask podman-desktop
 brew install skopeo # CLI tool for various operations on container images and image repositories
 brew install bruno # https://github.com/usebruno/bruno
 brew install gh # https://cli.github.com/
