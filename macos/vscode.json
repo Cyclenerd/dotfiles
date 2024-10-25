@@ -51,5 +51,7 @@
     "yaml.schemaStore.enable": false,
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
-    }
+    },
+    "dev.containers.dockerPath": "podman",
+    "dev.containers.dockerComposePath": "pdoman-compose"
 }
