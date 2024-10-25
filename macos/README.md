@@ -163,7 +163,7 @@ code --install-extension golang.Go
 code --install-extension hashicorp.terraform
 code --install-extension mechatroner.rainbow-csv
 code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 code --install-extension redhat.ansible
 code --install-extension redhat.vscode-yaml
 code --install-extension samosad.tt
