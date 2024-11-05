@@ -19,7 +19,7 @@ export PATH="$HOME/go/bin:$PATH"
 # Use brewed Ruby
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
+export CPPFLAGS="-I/opt/homebrew/opt/ruby/include $CPPFLAGS"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
 
 # Android Studio
@@ -48,6 +48,7 @@ eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
 
 # Use brewed Java
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include $CPPFLAGS"
 
 # Terraform
 alias tf='terraform'
