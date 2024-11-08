@@ -50,6 +50,9 @@ eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include $CPPFLAGS"
 
+# VS Code
+alias vsc='code .'
+
 # Terraform
 alias tf='terraform'
 alias tfa='terraform apply'
