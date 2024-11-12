@@ -24,6 +24,14 @@ About: <https://aka.ms/terminal>
 
 * `terminal.json` : My Windows Terminal settings
 
+## Git for Windows
+
+Download and install [Git for Windows](https://github.com/git-for-windows/git/releases/latest).
+
+Please pay attention to the configuration during installation. Enable "Checkout as-is, commit Unix-style line endings".
+
+![Screenshot: Git for Windows](./gitforwindows-checkout.png)
+
 ## TortoiseGit
 
 TortoiseGit is a Windows Shell Interface to Git and based on TortoiseSVN.
