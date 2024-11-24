@@ -96,6 +96,8 @@ brew install openjdk
 # https://github.com/tombonez/noTunes
 # Add to "Open at Login"
 brew install --cask notunes
+# hex editor, https://hexfiend.com/, https://github.com/HexFiend/HexFiend
+brew install --cask hex-fiend
 ```
 
 #### Ansible
