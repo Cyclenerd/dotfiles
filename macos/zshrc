@@ -53,6 +53,14 @@ export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include $CPPFLAGS"
 # VS Code
 alias vsc='code .'
 
+# Git
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git#aliases
+alias g='git'
+alias gl='git pull'
+alias gp='git push'
+alias gsh='git show'
+alias gcam='git commit --all --message'
+
 # Terraform
 alias tf='terraform'
 alias tfa='terraform apply'
