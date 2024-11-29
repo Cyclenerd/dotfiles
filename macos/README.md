@@ -2,7 +2,7 @@
 
 My notes and scripts to quickly configure a new Mac.
 
-![Screenshot: Apple Terminal -> neofetch](./neofetch.png)
+![Screenshot: Apple Terminal -> fastfetch](./fastfetch.png)
 
 
 ## Full Disk Access
