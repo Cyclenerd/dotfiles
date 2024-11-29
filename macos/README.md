@@ -76,7 +76,7 @@ brew install skopeo # CLI tool for various operations on container images and im
 brew install bruno # https://github.com/usebruno/bruno
 brew install gh # https://cli.github.com/
 brew install mtr telnet
-brew install neofetch figlet
+brew install neofetch fastfetch figlet
 brew install yt-dlp
 brew install rclone # https://rclone.org/
 brew install cmake
