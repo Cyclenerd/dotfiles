@@ -5,6 +5,9 @@
 # https://ghostty.org/docs/config/reference
 # ghostty +show-config --default --docs
 
+# some programs/shells do not recognize TERM=xterm-ghostty, so use the classic one
+term = xterm-256color
+
 theme = Dracula
 font-family = Source Code Pro
 font-thicken
