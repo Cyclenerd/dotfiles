@@ -5,5 +5,5 @@ Find other Ghostty configs on GitHub: [`path:*ghostty/config`](https://github.co
 Copy:
 
 ```bash
-cp "config" "$HOME/Library/Application\ Support/com.mitchellh.ghostty/config"
+cp "config" "$HOME/Library/Application Support/com.mitchellh.ghostty/config"
 ```
