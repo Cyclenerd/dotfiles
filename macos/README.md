@@ -59,6 +59,7 @@ Install the missing package manager for macOS:
 ### Packages
 
 ```shell
+brew install ghostty # 👻
 brew install coreutils
 brew install curl wget
 brew install htop btop

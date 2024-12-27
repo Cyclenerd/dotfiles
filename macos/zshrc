@@ -2,6 +2,13 @@
 #PS1='%F{green}%n@%m%f:%F{magenta}%~%f  '
 #PS1='%F{green}%n@slalom%f:%F{magenta}%~%f  '
 
+MY_APPLE_ICON=""  # https://emojipedia.org/apple-logo
+# Fix Apple logo to render properly in Ghostty
+if [[ "$TERM" = "xterm-ghostty" ]]; then
+    # https://www.nerdfonts.com/cheat-sheet
+    MY_APPLE_ICON=""
+fi
+
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr '%F{red}*'   # display this when there are unstaged changes
@@ -18,7 +25,7 @@ theme_precmd () {
 }
 
 setopt prompt_subst
-PROMPT='%~/ %{$reset_color%}${vcs_info_msg_0_}%{$reset_color%} '
+PROMPT='%~/ %{$reset_color%}${vcs_info_msg_0_}%{$reset_color%}${MY_APPLE_ICON} '
 
 autoload -U add-zsh-hook
 add-zsh-hook precmd theme_precmd

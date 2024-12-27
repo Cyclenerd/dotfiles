@@ -1,0 +1,30 @@
+# vim: set ft=dosini commentstring=#\ %s:
+
+# Ghostty Config 👻
+# ~/Library/Application\ Support/com.mitchellh.ghostty/config
+# https://ghostty.org/docs/config/reference
+# ghostty +show-config --default --docs
+
+theme = Dracula
+font-family = Source Code Pro
+font-thicken
+#font-style Regular
+font-size = 18
+
+shell-integration-features = no-cursor
+cursor-style = block
+cursor-style-blink = false
+macos-option-as-alt = true
+
+mouse-hide-while-typing = true
+
+window-width = 120
+window-height = 35
+window-save-state = never
+resize-overlay = never
+quit-after-last-window-closed = true
+macos-titlebar-style = native
+
+copy-on-select = true
+
+auto-update = off
