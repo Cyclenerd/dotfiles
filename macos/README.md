@@ -64,7 +64,7 @@ brew install coreutils
 brew install curl wget
 brew install htop btop
 brew install git git-lfs && git lfs install
-brew install nano sqlite jq shellcheck flake8 cloc
+brew install nano sqlite jq yq shellcheck flake8 cloc
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 brew install terraform-docs tfsec tflint packer vault sentinel opa
