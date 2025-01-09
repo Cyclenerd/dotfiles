@@ -70,7 +70,7 @@ brew install hashicorp/tap/terraform
 brew install terraform-docs tfsec tflint packer vault sentinel opa
 brew install imagemagick jhead
 brew install md5sha1sum
-brew install kubernetes-cli # kubectl
+brew install kubernetes-cli k9s # kubectl, https://k9scli.io/
 brew install podman podman-compose && brew install --cask podman-desktop
 ln /opt/homebrew/bin/docker /opt/homebrew/bin/podman
 brew install skopeo # CLI tool for various operations on container images and image repositories
