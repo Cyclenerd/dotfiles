@@ -90,6 +90,8 @@ alias gp='git push'
 alias gsh='git show'
 alias gcam='git commit --all --message'
 
+alias lz='lazygit'
+
 # Terraform
 alias tf='terraform'
 alias tfa='terraform apply'

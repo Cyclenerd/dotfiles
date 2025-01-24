@@ -76,6 +76,7 @@ ln /opt/homebrew/bin/docker /opt/homebrew/bin/podman
 brew install skopeo # CLI tool for various operations on container images and image repositories
 brew install bruno # https://github.com/usebruno/bruno
 brew install gh # https://cli.github.com/
+brew install jesseduffield/lazygit/lazygit # https://github.com/jesseduffield/lazygit
 brew install mtr telnet
 brew install neofetch fastfetch figlet
 brew install yt-dlp
