@@ -46,5 +46,10 @@
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
     "dev.containers.dockerPath": "podman",
-    "dev.containers.dockerComposePath": "pdoman-compose"
+    "dev.containers.dockerComposePath": "pdoman-compose",
+    "gitlab.duoCodeSuggestions.enabled": false,
+    "gitlab.duoChat.enabled": false,
+    "gitlab.duo.enabledWithoutGitlabProject": false,
+    "gitlab.keybindingHints.enabled": false,
+    "chat.commandCenter.enabled": false
 }
