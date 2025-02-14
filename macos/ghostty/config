@@ -27,6 +27,7 @@ window-save-state = never
 resize-overlay = never
 quit-after-last-window-closed = true
 macos-titlebar-style = native
+macos-icon = retro
 
 copy-on-select = true
 
