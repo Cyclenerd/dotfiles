@@ -4,7 +4,8 @@
 
 MY_APPLE_ICON=""  # https://emojipedia.org/apple-logo
 # Fix Apple logo to render properly in Ghostty
-if [[ "$GHOSTTY_RESOURCES_DIR" = "/Applications/Ghostty.app/Contents/Resources/ghostty" ]]; then
+# TERM_PROGRAM = ghostty, vscode, Apple_Terminal
+if [[ "$TERM_PROGRAM" = "ghostty" ]]; then
     # https://www.nerdfonts.com/cheat-sheet
     MY_APPLE_ICON=""
 fi
