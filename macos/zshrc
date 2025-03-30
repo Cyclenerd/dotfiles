@@ -93,6 +93,9 @@ alias gcam='git commit --all --message'
 
 alias lz='lazygit'
 
+# Podman 🦭
+alias docker='podman'
+
 # Terraform
 alias tf='terraform'
 alias tfa='terraform apply'
