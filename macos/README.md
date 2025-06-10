@@ -82,6 +82,7 @@ brew install neofetch fastfetch figlet
 brew install yt-dlp
 brew install rclone # https://rclone.org/
 brew install cmake
+brew install thefuck # The Fuck https://github.com/nvbn/thefuck
 # Perl
 brew install perl
 PERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib
