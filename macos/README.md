@@ -427,11 +427,23 @@ Download TTF: <https://fonts.google.com/download?family=Source%20Code%20Pro>
 
 Install: `SourceCodePro-Medium.ttf`
 
+Brew:
+
+```bash
+brew install --cask font-source-code-pro
+```
+
 ### Roboto
 
 Download TTF: <https://fonts.google.com/download?family=Roboto>
 
 Install: `Roboto-Regular.ttf`
+
+Brew:
+
+```bash
+brew install --cask font-roboto
+```
 
 ### Dracula
 
