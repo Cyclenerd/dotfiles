@@ -101,6 +101,9 @@ brew install openjdk
 brew install --cask notunes
 # hex editor, https://hexfiend.com/, https://github.com/HexFiend/HexFiend
 brew install --cask hex-fiend
+# OmniDiskSweeper (Quickly find large, unwanted files)
+# https://www.omnigroup.com/more
+brew install --cask omnidisksweeper
 ```
 
 #### Ansible
@@ -217,7 +220,7 @@ Example: <https://github.com/Cyclenerd/toolbox/tree/master/xquartz#readme>
 Website: <https://cloud.google.com/sdk/docs/install>
 
 ```shell
-brew install --cask google-cloud-sdk
+brew install --cask gcloud-cli
 ```
 
 ### AWS CLI
