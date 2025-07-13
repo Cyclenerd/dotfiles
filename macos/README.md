@@ -162,22 +162,33 @@ Open Settings (<kbd>Cmd</kbd>+<kbd>,</kbd>) and copy JSON settings: [vscode.json
 
 Install extensions:
 ```shell
-code --install-extension 4ops.packer
-code --install-extension bierner.markdown-mermaid
-code --install-extension dracula-theme.theme-dracula
-code --install-extension EditorConfig.EditorConfig
-code --install-extension euskadi31.json-pretty-printer
-code --install-extension GitLab.gitlab-workflow
-code --install-extension golang.Go
-code --install-extension hashicorp.terraform
-code --install-extension mechatroner.rainbow-csv
-code --install-extension ms-azuretools.vscode-containers
-code --install-extension ms-vscode-remote.vscode-remote-extensionpack
-code --install-extension redhat.ansible
-code --install-extension redhat.vscode-yaml
-code --install-extension samosad.tt
-code --install-extension vscode-icons
-code --install-extension ZainChen.json
+extensions=(
+    "4ops.packer"
+    "bierner.markdown-mermaid"
+    "dracula-theme.theme-dracula"
+    "EditorConfig.EditorConfig"
+    "eeyore.yapf"
+    "euskadi31.json-pretty-printer"
+    "github.vscode-github-actions"
+    "GitLab.gitlab-workflow"
+    "golang.Go"
+    "hashicorp.terraform"
+    "mechatroner.rainbow-csv"
+    "ms-azuretools.vscode-containers"
+    "ms-python.debugpy"
+    "ms-python.python"
+    "ms-python.vscode-pylance"
+    "ms-vscode-remote.vscode-remote-extensionpack"
+    "redhat.ansible"
+    "redhat.vscode-yaml"
+    "samosad.tt"
+    "vscode-icons"
+    "ZainChen.json"
+)
+
+for extension_id in "${extensions[@]}"; do
+    code --install-extension "$extension_id"
+done
 ```
 
 To install a extension you can also just execute the following command in the Command Palette of Visual Studio Code:
