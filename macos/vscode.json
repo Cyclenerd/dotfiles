@@ -5,6 +5,10 @@
     "editor.renderControlCharacters": true,
     "editor.fontSize": 16,
     "editor.fontFamily": "'Source Code Pro', Monaco, 'Courier New', monospace",
+    "workbench.colorTheme": "Dracula Theme",
+    "git.autofetch": true,
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontFamily": "Source Code Pro",
     "editor.acceptSuggestionOnEnter": "smart",
     "window.newWindowDimensions": "inherit",
     "workbench.startupEditor": "newUntitledFile",
@@ -13,13 +17,11 @@
     "files.eol": "\n",
     "git.enableSmartCommit": true,
     "files.associations": {
-        "*.tt2": "tt",
-        "*.yaml": "yaml"
+        "*.tt2": "tt"
     },
     "workbench.editor.enablePreview": false,
     "problems.decorations.enabled": false,
     "html.autoClosingTags": false,
-    "diffEditor.ignoreTrimWhitespace": false,
     "remote.SSH.remotePlatform": {
         "debian": "linux"
     },
@@ -32,14 +34,7 @@
     "git.openRepositoryInParentFolders": "never",
     "yaml.maxItemsComputed": 250000,
     "vsicons.dontShowNewVersionMessage": true,
-    "workbench.colorTheme": "Dracula Theme",
-    "git.autofetch": true,
-    "terminal.integrated.fontSize": 16,
-    "terminal.integrated.fontFamily": "'Source Code Pro', Monaco, 'Courier New', monospace",
     "go.toolsManagement.autoUpdate": true,
-    "cloudcode.duetAI.enable": false,
-    "cloudcode.duetAI.inlineSuggestions.enableAuto": false,
-    "dart.flutterSdkPath": "/Users/nils/flutter",
     "editor.stickyScroll.enabled": false,
     "yaml.schemaStore.enable": false,
     "[yaml]": {
@@ -47,9 +42,30 @@
     },
     "dev.containers.dockerPath": "podman",
     "dev.containers.dockerComposePath": "pdoman-compose",
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
     "gitlab.duoCodeSuggestions.enabled": false,
     "gitlab.duoChat.enabled": false,
-    "gitlab.duo.enabledWithoutGitlabProject": false,
     "gitlab.keybindingHints.enabled": false,
-    "chat.commandCenter.enabled": false
+    "gitlab.duo.enabledWithoutGitlabProject": false,
+    "chat.commandCenter.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.editor.empty.hint": "hidden",
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    "diffEditor.maxComputationTime": 0,
+    "terraform.mcp.server.enable": false
 }
