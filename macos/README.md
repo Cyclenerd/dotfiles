@@ -67,7 +67,9 @@ brew install git git-lfs && git lfs install
 brew install nano sqlite jq yq shellcheck flake8 cloc
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
-brew install terraform-docs tfsec tflint packer vault sentinel opa
+brew install hashicorp/tap/packer
+brew install hashicorp/tap/vault
+brew install terraform-docs tfsec tflint sentinel opa
 brew install imagemagick jhead
 brew install md5sha1sum
 brew install kubernetes-cli k9s # kubectl, https://k9scli.io/
