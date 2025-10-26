@@ -106,6 +106,8 @@ brew install --cask hex-fiend
 # OmniDiskSweeper (Quickly find large, unwanted files)
 # https://www.omnigroup.com/more
 brew install --cask omnidisksweeper
+# IINA open-source media player, https://iina.io/
+brew install --cask iina
 ```
 
 #### Ansible
@@ -397,7 +399,6 @@ Watch out! Not all apps are optimized for the Apple Silicon CPU!
 | [Shotcut](https://www.shotcut.org/download/) | ✅ |
 | [Sourcetree](https://www.sourcetreeapp.com/) | ✅ |
 | [Spotify](https://www.spotify.com/de/download/mac/) | ✅ |
-| [VLC](https://www.videolan.org/vlc/) | ✅ |
 | <s>[Logitech G HUB](https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.zip)</s> | ❌ |
 
 ### App Store
