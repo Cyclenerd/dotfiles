@@ -2,12 +2,14 @@
 #PS1='%F{green}%n@%m%f:%F{magenta}%~%f  '
 #PS1='%F{green}%n@slalom%f:%F{magenta}%~%f  '
 
-MY_APPLE_ICON=""  # https://emojipedia.org/apple-logo
+MY_APPLE_ICON="" # https://emojipedia.org/apple-logo
 # Fix Apple logo to render properly in Ghostty
 # TERM_PROGRAM = ghostty, vscode, Apple_Terminal
+EZA_ICONS=""
 if [[ "$TERM_PROGRAM" = "ghostty" ]]; then
-    # https://www.nerdfonts.com/cheat-sheet
-    MY_APPLE_ICON=""
+  # https://www.nerdfonts.com/cheat-sheet
+  MY_APPLE_ICON=""
+  EZA_ICONS="--icons"
 fi
 
 autoload -Uz vcs_info
@@ -121,6 +123,8 @@ alias show-all-files-on='defaults write com.apple.finder "AppleShowAllFiles" -bo
 alias show-all-files-off='defaults write com.apple.finder "AppleShowAllFiles" -bool "false" && killall Finder'
 alias ls='ls --color'
 alias ll='ls -lah'
+alias lsa="eza --all --long $EZA_ICONS"
+alias lst="eza --all --long --tree --level=3 --ignore-glob=.git $EZA_ICONS"
 alias plackup='plackup --host="127.0.0.1"'
 alias gcosts='/Users/nils/Developer/google-cloud-pricing-cost-calculator/gcosts/gcosts --pricing /Users/nils/Developer/google-cloud-pricing-cost-calculator/build/pricing.yml'
 alias archive-dl='wget -r --no-parent'

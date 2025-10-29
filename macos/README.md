@@ -63,6 +63,7 @@ brew install ghostty # 👻
 brew install coreutils
 brew install curl wget
 brew install htop btop
+brew install eza # A maintained replacement for ls, https://eza.rocks/
 brew install git git-lfs && git lfs install
 brew install nano sqlite jq yq shellcheck flake8 cloc
 brew tap hashicorp/tap
