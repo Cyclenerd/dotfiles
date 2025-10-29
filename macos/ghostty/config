@@ -31,4 +31,6 @@ macos-icon = retro
 
 copy-on-select = true
 
+bell-features = no-title
+
 auto-update = off
