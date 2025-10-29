@@ -67,5 +67,6 @@
         "diffEditor.ignoreTrimWhitespace": false
     },
     "diffEditor.maxComputationTime": 0,
-    "terraform.mcp.server.enable": false
+    "terraform.mcp.server.enable": false,
+    "chat.disableAIFeatures": true
 }
