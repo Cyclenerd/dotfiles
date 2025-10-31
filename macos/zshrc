@@ -119,12 +119,15 @@ alias tft='terraform test'
 alias tfv='terraform validate'
 
 # Aliases
-alias show-all-files-on='defaults write com.apple.finder "AppleShowAllFiles" -bool "true" && killall Finder'
-alias show-all-files-off='defaults write com.apple.finder "AppleShowAllFiles" -bool "false" && killall Finder'
-alias ls='ls --color'
+alias archive-dl='wget -r --no-parent'
+alias gcloud-auth-app='gcloud auth application-default login --no-launch-browser'
+alias gcloud-auth='gcloud auth login --no-launch-browser'
+alias gcosts='/Users/nils/Developer/google-cloud-pricing-cost-calculator/gcosts/gcosts --pricing /Users/nils/Developer/google-cloud-pricing-cost-calculator/build/pricing.yml'
 alias ll='ls -lah'
+alias ls='ls --color'
 alias lsa="eza --all --long $EZA_ICONS"
 alias lst="eza --all --long --tree --level=3 --ignore-glob=.git $EZA_ICONS"
+alias myip='curl -4 --silent http://whatismyip.akamai.com/'
 alias plackup='plackup --host="127.0.0.1"'
-alias gcosts='/Users/nils/Developer/google-cloud-pricing-cost-calculator/gcosts/gcosts --pricing /Users/nils/Developer/google-cloud-pricing-cost-calculator/build/pricing.yml'
-alias archive-dl='wget -r --no-parent'
+alias show-all-files-off='defaults write com.apple.finder "AppleShowAllFiles" -bool "false" && killall Finder'
+alias show-all-files-on='defaults write com.apple.finder "AppleShowAllFiles" -bool "true" && killall Finder'
