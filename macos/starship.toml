@@ -1,0 +1,756 @@
+# ~/.config/starship.toml
+
+# https://starship.rs/config/
+# https://starship.rs/presets/nerd-font
+# https://www.nerdfonts.com/cheat-sheet
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# https://starship.rs/config/#prompt
+format = """
+$os\
+$directory\
+$all\
+$line_break\
+$character"""
+
+command_timeout = 600
+
+# Use the color palette
+palette = "dracula"
+
+# AWS
+# https://starship.rs/config/#aws
+[aws]
+disabled = true
+symbol = " "
+
+# Azure
+# https://starship.rs/config/#azure
+[azure]
+disabled = true
+
+# Battery
+# https://starship.rs/config/#battery
+[battery]
+disabled = false
+
+[[battery.display]]
+threshold = 25
+style = 'bold red'
+
+# Buf
+# https://buf.build/
+# https://starship.rs/config/#buf
+[buf]
+symbol = " "
+disabled = true
+
+# Bun JavaScript runtime
+# https://starship.rs/config/#bun
+[bun]
+symbol = " "
+disabled = true
+
+# C compiler
+# https://starship.rs/config/#c
+[c]
+symbol = " "
+disabled = true
+
+# C++ compiler
+# https://starship.rs/config/#cpp
+[cpp]
+symbol = " "
+disabled = true
+
+# Character
+# The character module shows a character beside where the text is entered in your terminal.
+# https://starship.rs/config/#character
+[character]
+disabled = false
+
+# CMake
+# https://cmake.org/
+# https://starship.rs/config/#cmake
+[cmake]
+symbol = " "
+disabled = true
+
+# COBOL / GNUCOBOL
+# https://starship.rs/config/#cobol-gnucobol
+[cobol]
+disabled = true
+
+# Command Duration
+# https://starship.rs/config/#command-duration
+[cmd_duration]
+disabled = false
+min_time = 5000 # 5sec
+format = '[$duration](bold yellow) '
+
+# Conda
+# https://docs.conda.io/en/latest/
+# https://starship.rs/config/#conda
+[conda]
+symbol = " "
+disabled = true
+
+# Container
+# The container module displays a symbol and container name, if inside a container.
+# https://starship.rs/config/#container
+[container]
+disabled = true
+
+# Crystal
+# https://crystal-lang.org/
+# https://starship.rs/config/#crystal
+[crystal]
+symbol = " "
+disabled = true
+
+# Daml
+# https://www.digitalasset.com/developers
+# https://starship.rs/config/#daml
+[daml]
+disabled = true
+
+# Dart
+# https://dart.dev/
+# https://starship.rs/config/#dart
+[dart]
+symbol = " "
+disabled = true
+
+# Deno
+# https://deno.com/
+# https://starship.rs/config/#deno
+[deno]
+symbol = " "
+disabled = true
+
+# Directory
+# The directory module shows the path to your current directory, truncated to three parent folders.
+# https://starship.rs/config/#directory
+[directory]
+read_only = " 󰌾"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+truncate_to_repo = true
+home_symbol = " "
+
+[directory.substitutions]
+".config" = " "
+".Trash" = " "
+"Desktop" = " "
+"Developer" = " "
+"Documents" = "󰲂 "
+"Downloads" = "󰉍 "
+"Movies" = "󰿎 "
+"Music" = "󱍙 "
+"Pictures" = "󰉏 "
+"Public" = " "
+
+# Direnv
+# The direnv module shows the status of the current rc file if one is present.
+# https://starship.rs/config/#direnv
+[direnv]
+disabled = true
+
+# Docker Context
+# https://docs.docker.com/engine/manage-resources/contexts/
+# https://starship.rs/config/#docker-context
+[docker_context]
+symbol = " "
+disabled = true
+
+# Dotnet
+# https://starship.rs/config/#dotnet
+[dotnet]
+disabled = true
+
+# Elixir
+# https://starship.rs/config/#elixir
+[elixir]
+symbol = " "
+disabled = true
+
+# Elm
+# https://elm-lang.org/
+# https://starship.rs/config/#elm
+[elm]
+symbol = " "
+disabled = true
+
+# Environment Variable
+# The env_var module displays the current value of a selected environment variables.
+# https://starship.rs/config/#environment-variable
+#[env_var.USER]
+#format = "[$env_value](cyan) "
+#default = 'unknown user'
+#[env_var.LANG]
+#format = "[$env_value](cyan) "
+
+# Erlang
+# https://starship.rs/config/#erlang
+[erlang]
+disabled = true
+
+# Fennel
+# https://fennel-lang.org/
+# https://starship.rs/config/#fennel
+[fennel]
+symbol = " "
+disabled = true
+
+# Fill
+# The fill module fills any extra space on the line with a symbol.
+# format = 'AA $fill BB $fill CC'
+# Produces a prompt that looks like:
+# AA .......... BB .......... CC
+# https://starship.rs/config/#fill
+[fill]
+disabled = false
+symbol = '.'
+style = 'bold black'
+
+# Fortran
+# https://starship.rs/config/#fortran
+[fortran]
+symbol = " "
+disabled = true
+
+# Fossil Branch
+# https://starship.rs/config/#fossil-branch
+[fossil_branch]
+symbol = " "
+disabled = true
+
+# Fossil Metrics
+# https://starship.rs/config/#fossil-metrics
+[fossil_metrics]
+disabled = true
+
+# Google Cloud
+# https://starship.rs/config/#google-cloud-gcloud
+[gcloud]
+symbol = " "
+disabled = false
+format = '[$symbol($domain)]($style) '
+#format = 'on [$symbol$account(@$domain)(\($project\))]($style) '
+style = 'pink bold'
+
+[gcloud.project_aliases]
+self-training-munich = 'training'
+
+# Git Branch
+# https://starship.rs/config/#git-branch
+[git_branch]
+symbol = " "
+disabled = false
+
+# Git Commit
+# https://starship.rs/config/#git-commit
+[git_commit]
+tag_symbol = '  '
+
+# Git State
+# https://starship.rs/config/#git-state
+[git_state]
+disabled = false
+
+# Git Metrics
+# The git_metrics module will show the number of added and deleted lines in the current git repository.
+# https://starship.rs/config/#git-metrics
+[git_metrics]
+disabled = false
+format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
+
+# Git Status
+# The git_status module shows symbols representing the state of the repo in your current directory.
+# https://starship.rs/config/#git-status
+[git_status]
+disabled = false
+
+# Gleam
+# https://gleam.run/
+# https://starship.rs/config/#gleam
+[gleam]
+disabled = true
+
+# Go
+# https://starship.rs/config/#go
+[golang]
+symbol = " "
+disabled = true
+
+# Guix-shell
+# https://starship.rs/config/#guix-shell
+[guix_shell]
+symbol = " "
+disabled = true
+
+# Gradle
+# https://starship.rs/config/#gradle
+[gradle]
+symbol = " "
+disabled = true
+
+# Haskell
+# https://starship.rs/config/#haskell
+[haskell]
+symbol = " "
+disabled = true
+
+# Haxe
+# https://starship.rs/config/#haxe
+[haxe]
+symbol = " "
+disabled = true
+
+# Helm
+# https://starship.rs/config/#helm
+[helm]
+disabled = true
+
+# Hostname
+# The hostname module shows the system hostname.
+# https://starship.rs/config/#hostname
+[hostname]
+ssh_symbol = " "
+ssh_only = true
+disabled = false
+format = '[$ssh_symbol](bold blue) on [$hostname](bold red) '
+
+# Java
+# https://starship.rs/config/#java
+[java]
+symbol = " "
+disabled = true
+
+# Jobs
+# The jobs module shows the current number of jobs running.
+# https://starship.rs/config/#jobs
+[jobs]
+disabled = true
+
+# Julia
+# https://julialang.org/
+# https://starship.rs/config/#julia
+[julia]
+symbol = " "
+disabled = true
+
+# Kotlin
+# https://starship.rs/config/#kotlin
+[kotlin]
+symbol = " "
+disabled = true
+
+# Kubernetes
+# https://starship.rs/config/#kubernetes
+[kubernetes]
+disabled = true
+
+# Line Break
+# The line_break module separates the prompt into two lines.
+# https://starship.rs/config/#line-break
+[line_break]
+disabled = false
+# disabled = true # Disables the line_break module, making the prompt a single line.
+
+# Local IP
+# https://starship.rs/config/#local-ip
+[localip]
+ssh_only = true
+format = '@[$localipv4](bold red) '
+disabled = false
+
+# Lua
+# https://starship.rs/config/#lua
+[lua]
+symbol = " "
+disabled = true
+
+# Memory Usage
+# https://starship.rs/config/#memory-usage
+[memory_usage]
+symbol = "󰍛 "
+disabled = false
+threshold = 75
+format = '[$symbol${ram}( | ${swap})]($style) '
+style = 'red bold'
+
+# Meson
+# https://starship.rs/config/#meson
+[meson]
+symbol = "󰔷 "
+disabled = true
+
+# Mercurial Branch
+# https://starship.rs/config/#mercurial-branch
+[hg_branch]
+symbol = " "
+disabled = true
+
+# Mercurial State
+# https://starship.rs/config/#mercurial-state
+[hg_state]
+disabled = true
+
+# Mise
+# https://starship.rs/config/#mise
+[mise]
+disabled = true
+
+# Mojo
+# https://www.modular.com/mojo
+# https://starship.rs/config/#mojo
+[mojo]
+disabled = true
+
+# NATS
+# https://nats.io/
+# https://starship.rs/config/#nats
+[nats]
+disabled = true
+
+# Network Namespace
+# The netns module shows the current network namespace.
+# https://starship.rs/config/#network-namespace
+[netns]
+disabled = true
+
+# Nim
+# https://nim-lang.org/
+# https://starship.rs/config/#nim
+[nim]
+symbol = "󰆥 "
+disabled = true
+
+# Nix-shell
+# https://nixos.org/guides/nix-pills/10-developing-with-nix-shell.html
+# https://starship.rs/config/#nix-shell
+[nix_shell]
+symbol = " "
+disabled = true
+
+# Node.js
+# https://starship.rs/config/#node-js
+[nodejs]
+symbol = " "
+disabled = true
+
+# OCaml
+# https://ocaml.org/
+# https://starship.rs/config/#ocaml
+[ocaml]
+symbol = " "
+disabled = true
+
+# Odin
+# https://odin-lang.org/
+# https://starship.rs/config/#odin
+[odin]
+disabled = true
+
+# Open Policy Agent
+# https://starship.rs/config/#open-policy-agent
+[opa]
+disabled = true
+
+# OpenStack
+# https://starship.rs/config/#openstack
+[openstack]
+disabled = true
+
+# OS
+# The os module shows the current operating system.
+# https://starship.rs/config/#os
+[os]
+format = "[($symbol)]($style)"
+style = "white"
+disabled = false
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+AOSC = " "
+Arch = " "
+Artix = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+Nobara = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
+
+# Package Version
+# The package module is shown when the current directory is the repository for a package, and shows its current version.
+# https://starship.rs/config/#package-version
+[package]
+symbol = "󰏗 "
+disabled = true
+
+# Perl
+# The perl module shows the currently installed version of Perl.
+# https://starship.rs/config/#perl
+[perl]
+symbol = " "
+disabled = false
+format = '[$symbol($version )]($style)'
+style = 'yellow bold'
+
+# PHP
+# The php module shows the currently installed version of PHP.
+# https://starship.rs/config/#php
+[php]
+symbol = " "
+disabled = false
+format = '[$symbol($version )]($style)'
+style = 'yellow bold'
+
+# Pijul Channel
+# https://starship.rs/config/#pijul-channel
+[pijul_channel]
+symbol = " "
+disabled = true
+
+# Pixi
+# https://pixi.sh/latest/
+# https://starship.rs/config/#pixi
+[pixi]
+symbol = "󰏗 "
+disabled = true
+
+# Pulumi
+# The pulumi module shows the current username, selected Pulumi Stack, and version.
+# https://starship.rs/config/#pulumi
+[pulumi]
+disabled = true
+
+# PureScript
+# https://www.purescript.org/
+# https://starship.rs/config/#purescript
+[purescript]
+disabled = true
+
+# Python
+# The python module shows the currently installed version of Python and
+# the current Python virtual environment if one is activated.
+# https://starship.rs/config/#python
+[python]
+symbol = " "
+disabled = false
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+style = 'yellow bold'
+
+# Quarto
+# https://starship.rs/config/#quarto
+[quarto]
+disabled = true
+
+# R
+# https://starship.rs/config/#r
+[rlang]
+symbol = "󰟔 "
+disabled = true
+
+# Raku (aka Perl 6)
+# https://raku.org/
+# https://starship.rs/config/#raku
+[raku]
+disabled = true
+
+# Red
+# https://www.red-lang.org/
+# https://starship.rs/config/#red
+[red]
+disabled = true
+
+# Ruby
+# By default the ruby module shows the currently installed version of Ruby.
+# https://www.ruby-lang.org/en/
+# https://starship.rs/config/#ruby
+[ruby]
+symbol = " "
+disabled = true
+
+# Rust
+# By default the rust module shows the currently installed version of Rust.
+# https://rust-lang.org/
+# https://starship.rs/config/#rust
+[rust]
+symbol = "󱘗 "
+disabled = true
+
+# Scala
+# https://www.scala-lang.org/
+# https://starship.rs/config/#scala
+[scala]
+symbol = " "
+disabled = true
+
+# Shell
+# The shell module shows an indicator for currently used shell.
+# https://starship.rs/config/#shell
+[shell]
+disabled = true
+
+# SHLVL
+# https://tldp.org/LDP/abs/html/internalvariables.html#SHLVLREF
+# https://starship.rs/config/#shlvl
+[shlvl]
+disabled = true
+
+# Singularity
+# https://sylabs.io/singularity/
+# https://starship.rs/config/#singularity
+[singularity]
+disabled = true
+
+# Solidity
+# https://www.soliditylang.org/
+# https://starship.rs/config/#solidity
+[solidity]
+disabled = true
+
+# Spack
+# https://spack.readthedocs.io/en/latest/
+# https://starship.rs/config/#spack
+[spack]
+disabled = true
+
+# Status
+# The status module displays the exit code of the previous command.
+# https://starship.rs/config/#status
+[status]
+symbol = " "
+disabled = false
+
+# Sudo
+# The sudo module displays if sudo credentials are currently cached.
+# https://starship.rs/config/#sudo
+[sudo]
+disabled = true
+
+# Swift
+# https://starship.rs/config/#swift
+[swift]
+symbol = " "
+disabled = true
+
+# Terraform
+# The terraform module shows the currently selected Terraform workspace and version.
+# It supports both Hashicorp Terraform and OpenTofu for version detection.
+# By default the Terraform/OpenTofu version is not shown,
+# since this is slow for current versions when a lot of plugins are in use.
+# https://starship.rs/config/#terraform
+[terraform]
+symbol = " "
+disabled = false
+format = '[$symbol$version]($style) '
+style = 'yellow bold'
+
+# Time
+# https://starship.rs/config/#time
+[time]
+disabled = true
+format = '[ $time]($style) '
+time_format = '%T'
+
+# Typst
+# https://starship.rs/config/#typst
+[typst]
+disabled = true
+
+# Username
+# https://starship.rs/config/#username
+[username]
+disabled = false
+show_always = false
+format = '[$user]($style) '
+
+# Vagrant
+# https://developer.hashicorp.com/vagrant
+# https://starship.rs/config/#vagrant
+[vagrant]
+disabled = true
+
+# V
+# https://vlang.io/
+# https://starship.rs/config/#v
+[vlang]
+disabled = true
+
+# VCSH
+# https://github.com/RichiH/vcsh
+# https://starship.rs/config/#vcsh
+[vcsh]
+disabled = true
+
+# XMake
+# The xmake module shows the currently installed version of XMake.
+# https://starship.rs/config/#xmake
+[xmake]
+symbol = " "
+disabled = true
+
+# Zig
+# By default the zig module shows the currently installed version of Zig.
+# https://starship.rs/config/#zig
+[zig]
+symbol = " "
+disabled = true
+
+# Define Dracula color palette
+# https://github.com/dracula/starship
+[palettes.dracula]
+background = "#282a36"
+current_line = "#44475a"
+foreground = "#f8f8f2"
+comment = "#6272a4"
+cyan = "#8be9fd"
+green = "#50fa7b"
+orange = "#ffb86c"
+pink = "#ff79c6"
+purple = "#bd93f9"
+red = "#ff5555"
+yellow = "#f1fa8c"
