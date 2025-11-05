@@ -110,6 +110,12 @@ brew install --cask hex-fiend
 brew install --cask omnidisksweeper
 # IINA open-source media player, https://iina.io/
 brew install --cask iina
+# Container scanner
+# https://google.github.io/osv-scanner/
+brew install osv-scanner
+# https://github.com/anchore/grype
+brew tap anchore/grype
+brew install grype
 ```
 
 #### Ansible
