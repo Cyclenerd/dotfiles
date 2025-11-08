@@ -62,6 +62,7 @@ Install the missing package manager for macOS:
 brew install ghostty # 👻
 brew install starship # https://starship.rs/
 brew install carapace # https://carapace.sh/
+brew install fzf # https://junegunn.github.io/fzf/
 brew install coreutils
 brew install curl wget
 brew install htop btop
