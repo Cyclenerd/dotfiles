@@ -2,8 +2,9 @@
 
 My notes and scripts to quickly configure a new Mac.
 
-![Screenshot: Apple Terminal -> fastfetch](./fastfetch.png)
-
+| Ghostty -> fastfetch                      | Ghostty -> fzf                |
+|-------------------------------------------|-------------------------------|
+| ![Screenshot: fastfetch](./fastfetch.png) | ![Screenshot: fzf](./fzf.png) |
 
 ## Full Disk Access
 
