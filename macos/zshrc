@@ -35,9 +35,6 @@ tw=35:\
 tx=36:\
 xx=95:"
 
-autoload -U add-zsh-hook
-add-zsh-hook precmd theme_precmd
-
 # Hoembrew configuration
 # https://docs.brew.sh/Analytics
 export HOMEBREW_NO_ANALYTICS=1
