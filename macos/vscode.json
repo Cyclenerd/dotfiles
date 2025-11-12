@@ -11,6 +11,7 @@
     "terminal.integrated.fontFamily": "Source Code Pro",
     "editor.acceptSuggestionOnEnter": "smart",
     "window.newWindowDimensions": "inherit",
+    "window.title": "${activeFolderLong}${separator}${activeEditorShort}",
     "workbench.startupEditor": "newUntitledFile",
     "extensions.ignoreRecommendations": true,
     "git.ignoreMissingGitWarning": true,
