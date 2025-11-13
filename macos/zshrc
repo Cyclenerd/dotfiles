@@ -108,6 +108,7 @@ alias gl='git pull'
 alias gp='git push'
 alias gsh='git show'
 alias gcam='git commit --all --message'
+alias yolo='git commit -am "$(curl -s https://whatthecommit.com/index.txt)"'
 
 alias lz='lazygit'
 
