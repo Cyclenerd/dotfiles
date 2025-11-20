@@ -178,14 +178,11 @@ Open Settings (<kbd>Cmd</kbd>+<kbd>,</kbd>) and copy JSON settings: [vscode.json
 Install extensions:
 ```shell
 extensions=(
-    "4ops.packer"
     "bierner.markdown-mermaid"
     "dracula-theme.theme-dracula"
     "EditorConfig.EditorConfig"
     "eeyore.yapf"
-    "euskadi31.json-pretty-printer"
     "github.vscode-github-actions"
-    "GitLab.gitlab-workflow"
     "golang.Go"
     "hashicorp.terraform"
     "mechatroner.rainbow-csv"
@@ -194,7 +191,6 @@ extensions=(
     "ms-python.python"
     "ms-python.vscode-pylance"
     "ms-vscode-remote.vscode-remote-extensionpack"
-    "redhat.ansible"
     "redhat.vscode-yaml"
     "samosad.tt"
     "vscode-icons"
