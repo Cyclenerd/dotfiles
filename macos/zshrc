@@ -44,6 +44,9 @@ export HOMEBREW_NO_ENV_HINTS="true"
 # Use brewed curl
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
+# Use brewed sqlite3
+export PATH="/opt/homebrew/opt/sqlite3/bin:$PATH"
+
 # Python
 export PATH="$HOME/Library/Python/3.11/bin:$PATH"
 
@@ -56,21 +59,21 @@ export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/ruby/include $CPPFLAGS"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
 
-# Android Studio
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
-export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
-
-# Flutter
-export PATH="$HOME/flutter/bin:$PATH"
-# CocoaPods (for Flutter)
-export GEM_HOME="$HOME/.gem"
-export PATH="$GEM_HOME/bin:$PATH"
-export PATH="$GEM_HOME/ruby/3.2.0/bin:$PATH"
-
 # Use brewed Java
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include $CPPFLAGS"
+
+# Android Studio
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
+
+# Flutter
+export PATH="$PATH:$HOME/flutter/bin"
+# CocoaPods (for Flutter)
+export GEM_HOME="$HOME/.gem"
+export PATH="$PATH:$GEM_HOME/bin"
+export PATH="$PATH:$GEM_HOME/ruby/3.2.0/bin"
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/nils/.cache/lm-studio/bin"
