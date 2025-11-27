@@ -101,6 +101,13 @@ eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
 # Use the Fuck (https://github.com/nvbn/thefuck)
 eval $(thefuck --alias)
 
+# Load .env with API keys
+if [ -f "$HOME/.env" ]; then
+  set -a
+  source "$HOME/.env"
+  set +a
+fi
+
 # VS Code
 alias vsc='code .'
 
@@ -148,8 +155,4 @@ alias myip='curl -4 --silent http://whatismyip.akamai.com/'
 alias plackup='plackup --host="127.0.0.1"'
 alias show-all-files-off='defaults write com.apple.finder "AppleShowAllFiles" -bool "false" && killall Finder'
 alias show-all-files-on='defaults write com.apple.finder "AppleShowAllFiles" -bool "true" && killall Finder'
-
-# Load API keys
-if [ -f "$HOME/.api_keys" ]; then
-    source "$HOME/.api_keys"
-fi
+alias cloudflare-tunnel="cloudflared tunnel run --token $CLOUDFLARED_TUNNEL_KEY"
