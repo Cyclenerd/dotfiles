@@ -108,6 +108,8 @@ brew install openjdk
 brew install --cask notunes
 # hex editor, https://hexfiend.com/, https://github.com/HexFiend/HexFiend
 brew install --cask hex-fiend
+# Deep clean and optimize your Mac, https://github.com/tw93/Mole
+brew install tw93/tap/mole
 # OmniDiskSweeper (Quickly find large, unwanted files)
 # https://www.omnigroup.com/more
 brew install --cask omnidisksweeper
