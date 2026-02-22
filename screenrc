@@ -16,3 +16,5 @@ bindkey "^[k" eval "copy" "stuff ^b"  # enter copy mode and move up one page
 bindkey "^k" eval "copy" "stuff k"    # enter copy mode and move up one line
 bindkey -m "^[k" stuff ^b             # move up one page
 bindkey -m "^k" stuff k               # move up one line
+
+shell bash
