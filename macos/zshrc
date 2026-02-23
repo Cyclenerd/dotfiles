@@ -63,6 +63,11 @@ export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include $CPPFLAGS"
 
+# Use brewed Image Magick
+export PATH="/opt/homebrew/opt/imagemagick-full/bin:$PATH"
+# export LDFLAGS="-L/opt/homebrew/opt/imagemagick-full/lib"
+# export CPPFLAGS="-I/opt/homebrew/opt/imagemagick-full/include"
+
 # Android Studio
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools"

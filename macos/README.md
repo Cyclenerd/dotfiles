@@ -75,7 +75,7 @@ brew install hashicorp/tap/terraform
 brew install hashicorp/tap/packer
 brew install hashicorp/tap/vault
 brew install terraform-docs tfsec tflint sentinel opa
-brew install imagemagick jhead
+brew install imagemagick imagemagick-full ghostscript jhead
 brew install md5sha1sum
 brew install kubernetes-cli k9s # kubectl, https://k9scli.io/
 brew install podman podman-compose && brew install --cask podman-desktop
