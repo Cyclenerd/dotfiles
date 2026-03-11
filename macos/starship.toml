@@ -15,7 +15,7 @@ $all\
 $line_break\
 $character"""
 
-command_timeout = 600
+command_timeout = 240
 
 # Use the color palette
 palette = "dracula"
@@ -364,9 +364,7 @@ disabled = false
 # Local IP
 # https://starship.rs/config/#local-ip
 [localip]
-ssh_only = true
-format = '@[$localipv4](bold red) '
-disabled = false
+disabled = true
 
 # Lua
 # https://starship.rs/config/#lua
@@ -534,7 +532,7 @@ disabled = true
 # https://starship.rs/config/#perl
 [perl]
 symbol = " "
-disabled = false
+disabled = true
 format = '[$symbol($version )]($style)'
 style = 'yellow bold'
 
@@ -543,7 +541,7 @@ style = 'yellow bold'
 # https://starship.rs/config/#php
 [php]
 symbol = " "
-disabled = false
+disabled = true
 format = '[$symbol($version )]($style)'
 style = 'yellow bold'
 
@@ -685,7 +683,7 @@ disabled = true
 # https://starship.rs/config/#terraform
 [terraform]
 symbol = " "
-disabled = false
+disabled = true
 format = '[$symbol$version]($style) '
 style = 'yellow bold'
 
