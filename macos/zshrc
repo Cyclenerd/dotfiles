@@ -150,6 +150,7 @@ alias tfv='terraform validate'
 # Aliases
 alias archive-dl='wget -r --no-parent'
 alias gcloud-auth-app='gcloud auth application-default login --no-launch-browser'
+alias gcloud-auth-both='gcloud auth login --no-launch-browser --update-adc'
 alias gcloud-auth='gcloud auth login --no-launch-browser'
 alias gcosts='/Users/nils/Developer/google-cloud-pricing-cost-calculator/gcosts/gcosts --pricing /Users/nils/Developer/google-cloud-pricing-cost-calculator/build/pricing.yml'
 alias ll='ls -lah'
