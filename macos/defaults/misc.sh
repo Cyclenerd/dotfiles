@@ -4,6 +4,12 @@
 # Author: Nils Knieling - https://github.com/Cyclenerd/dotfiles
 #
 
+restart_process() {
+	if ! killall "$1" >/dev/null 2>&1; then
+		echo "Warning: failed to restart $1; continuing..."
+	fi
+}
+
 # Enable Dark Mode
 defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
 
@@ -23,7 +29,6 @@ defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 
 # Show the current CPU usages, as a verticle meter.
 defaults write com.apple.ActivityMonitor "IconType" -int "5"
-killall Activity\ Monitor
 
 # Turn on app auto-update
 defaults write com.apple.commerce AutoUpdate -bool true
@@ -50,3 +55,13 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Clock
+defaults write com.apple.menuextra.clock ShowAMPM -bool false
+defaults write com.apple.menuextra.clock ShowDate -int 2
+defaults write com.apple.menuextra.clock ShowDayOfWeek -bool false
+
+restart_process Finder
+restart_process "Activity Monitor"
+
+echo "Done"

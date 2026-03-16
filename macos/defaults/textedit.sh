@@ -6,6 +6,12 @@
 # Author: Nils Knieling - https://github.com/Cyclenerd/dotfiles
 #
 
+restart_process() {
+	if ! killall "$1" >/dev/null 2>&1; then
+		echo "Warning: failed to restart $1; continuing..."
+	fi
+}
+
 # Disabled rich text / Text is default
 defaults write com.apple.TextEdit "RichText" -bool "false"
 
@@ -17,4 +23,6 @@ defaults write com.apple.TextEdit "NSFixedPitchFontSize" -int "16";
 defaults write com.apple.TextEdit "NSFontPanelAttributes" -string "1, 0";
 defaults write com.apple.TextEdit "NSNavLastRootDirectory" -string "~/Desktop";
 
-killall TextEdit
+restart_process TextEdit
+
+echo "Done"

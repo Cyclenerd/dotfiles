@@ -6,6 +6,12 @@
 # Author: Nils Knieling - https://github.com/Cyclenerd/dotfiles
 #
 
+restart_process() {
+	if ! killall "$1" >/dev/null 2>&1; then
+		echo "Warning: failed to restart $1; continuing..."
+	fi
+}
+
 # Allow quitting via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
 
@@ -46,5 +52,10 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
+# Sidebar
+defaults write com.apple.finder ShowRecentTags -bool false
+
 # Restart
-killall Finder
+restart_process Finder
+
+echo "Done"
