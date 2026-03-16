@@ -60,14 +60,18 @@ Install the missing package manager for macOS:
 ### Packages
 
 ```shell
-brew install ghostty # 👻
-brew install starship # https://starship.rs/
-brew install carapace # https://carapace.sh/
-brew install fzf # https://junegunn.github.io/fzf/
+brew install ghostty
+# https://starship.rs/
+brew install starship
+# https://carapace.sh/
+brew install carapace
+# https://junegunn.github.io/fzf/
+brew install fzf
 brew install coreutils
 brew install curl wget
 brew install htop btop
-brew install eza # A maintained replacement for ls, https://eza.rocks/
+# A maintained replacement for ls, https://eza.rocks/
+brew install eza
 brew install git git-lfs && git lfs install
 brew install nano sqlite jq yq shellcheck flake8 cloc
 brew tap hashicorp/tap
@@ -77,17 +81,25 @@ brew install hashicorp/tap/vault
 brew install terraform-docs tfsec tflint sentinel opa
 brew install imagemagick imagemagick-full ghostscript jhead
 brew install md5sha1sum
-brew install kubernetes-cli k9s # kubectl, https://k9scli.io/
+# kubectl, https://k9scli.io/
+brew install kubernetes-cli k9s
 brew install podman podman-compose && brew install --cask podman-desktop
 ln /opt/homebrew/bin/docker /opt/homebrew/bin/podman
-brew install skopeo # CLI tool for various operations on container images and image repositories
-brew install bruno # https://github.com/usebruno/bruno
-brew install gh # https://cli.github.com/
-brew install jesseduffield/lazygit/lazygit # https://github.com/jesseduffield/lazygit
+# CLI tool for various operations on container images and image repositories
+brew install skopeo
+# https://github.com/usebruno/bruno
+brew install bruno
+# https://cli.github.com/
+brew install gh
+# https://docs.github.com/en/copilot/concepts/agents/copilot-cli/about-copilot-cli
+brew install --cask copilot-cli
+# https://github.com/jesseduffield/lazygit
+brew install jesseduffield/lazygit/lazygit
 brew install mtr telnet
 brew install neofetch fastfetch figlet
 brew install yt-dlp
-brew install rclone # https://rclone.org/
+# https://rclone.org/
+brew install rclone
 brew install cmake
 # Perl
 brew install perl
