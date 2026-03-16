@@ -2,7 +2,10 @@
 
 Scripts to set macOS `defaults`.
 
-Tested with macOS Ventura (13.2).
+Tested with:
+
+-   macOS Ventura 13.2
+-   macOS Tahoe 26.3.2
 
 ## More
 

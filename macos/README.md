@@ -84,7 +84,7 @@ brew install md5sha1sum
 # kubectl, https://k9scli.io/
 brew install kubernetes-cli k9s
 brew install podman podman-compose && brew install --cask podman-desktop
-ln /opt/homebrew/bin/docker /opt/homebrew/bin/podman
+ln /opt/homebrew/bin/podman /opt/homebrew/bin/docker
 # CLI tool for various operations on container images and image repositories
 brew install skopeo
 # https://github.com/usebruno/bruno
@@ -132,6 +132,9 @@ brew install osv-scanner
 # https://github.com/anchore/grype
 brew tap anchore/grype
 brew install grype
+# Matrix client
+# https://element.io/en/app
+brew install --cask element
 ```
 
 #### Ansible
@@ -412,14 +415,21 @@ Watch out! Not all apps are optimized for the Apple Silicon CPU!
 | [Minecraft](https://www.minecraft.net/en-us/store/minecraft-java-bedrock-edition-pc) | ❌ |
 | [OBS](https://obsproject.com/) | ✅ |
 | [Poedit](https://poedit.net/download>) | ✅ |
-| [Postman](https://www.postman.com/downloads/) | ✅ |
+| [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/) | ✅ |
 | [qFlipper](https://flipperzero.one/update) | ✅ |
 | [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases/latest) | ✅ |
 | [Raspberry Pi Imager](https://www.raspberrypi.com/software/) | ✅ |
 | [Shotcut](https://www.shotcut.org/download/) | ✅ |
 | [Sourcetree](https://www.sourcetreeapp.com/) | ✅ |
 | [Spotify](https://www.spotify.com/de/download/mac/) | ✅ |
-| <s>[Logitech G HUB](https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.zip)</s> | ❌ |
+
+Logi Options+ Pointer speed: `2850 DPI`
+
+![Screenshot: Logi Options+ DPI Setting](./logi.webp)
+
+Shottr Hotkeys:
+
+![Screenshot: Shottr](./shottr.webp)
 
 ### App Store
 
@@ -499,9 +509,11 @@ brew install --cask font-roboto
 
 Website: <https://motu.com/en-us/products/m-series/m2/getting-started/>
 
-No extra drivers needed!
+Download: <https://motu.com/en-us/download/#category=1&product=408>
 
 ### EPSON WF-3820 Series
+
+> Apple Rosetta needed
 
 Website: <https://support.epson.net/setupnavi/?LG2=EN&OSC=MI&MKN=WF-3820&PINF=menu&linkflg=alllist>
 
