@@ -135,6 +135,9 @@ brew install grype
 # Matrix client
 # https://element.io/en/app
 brew install --cask element
+# Arduino IDE
+# https://www.arduino.cc/en/software/
+brew install --cask arduino-ide
 ```
 
 #### Ansible
