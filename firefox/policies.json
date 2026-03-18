@@ -17,8 +17,8 @@
     "DontCheckDefaultBrowser": true,
     "DNSOverHTTPS": {
       "Enabled":  true,
-      "ProviderURL": "https://dnsforge.de/dns-query",
-      "Locked": true,
+      "ProviderURL": "https://extended.dns.mullvad.net/dns-query",
+      "Locked": false,
       "ExcludedDomains": ["fritz.box"],
       "Fallback": false
     },

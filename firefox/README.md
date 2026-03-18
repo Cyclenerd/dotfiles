@@ -4,13 +4,6 @@ Firefox features can be configured using Group Policy templates on Windows, Intu
 
 You can check which policies are applied in Firefox by navigating to the `about:policies` page.
 
-## Windows installation
-
-```bat
-mkdir C:\Program Files\Mozilla Firefox\distribution
-copy policies.json C:\Program Files\Mozilla Firefox\distribution\
-```
-
 ## macOS installation
 
 **Note:**
@@ -33,6 +26,13 @@ To remove the custom configuration, delete the `policies.json` file from the dis
 ```bash
 sudo mkdir -p /etc/firefox/policies
 sudo cp policies.json /etc/firefox/policies/
+```
+
+## Windows installation
+
+```bat
+mkdir C:\Program Files\Mozilla Firefox\distribution
+copy policies.json C:\Program Files\Mozilla Firefox\distribution\
 ```
 
 ## Documentation
