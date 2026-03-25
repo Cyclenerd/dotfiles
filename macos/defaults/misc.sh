@@ -59,6 +59,9 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Disable icons in menus
+defaults write NSGlobalDomain NSMenuEnableActionImages -bool false
+
 # Clock
 defaults write com.apple.menuextra.clock ShowAMPM -bool false
 defaults write com.apple.menuextra.clock ShowDate -int 2
