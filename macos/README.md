@@ -216,7 +216,7 @@ extensions=(
     "ms-vscode-remote.vscode-remote-extensionpack"
     "redhat.vscode-yaml"
     "samosad.tt"
-    "vscode-icons"
+    "vscode-icons-team.vscode-icons"
     "ZainChen.json"
 )
 
