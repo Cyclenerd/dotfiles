@@ -83,6 +83,10 @@ brew install imagemagick imagemagick-full ghostscript jhead
 brew install md5sha1sum
 # kubectl, https://k9scli.io/
 brew install kubernetes-cli k9s
+# https://github.com/containers/podman/issues/27056
+# https://podman-desktop.io/docs/podman/creating-a-podman-machine
+brew tap slp/krunkit
+brew install krunkit
 brew install podman podman-compose && brew install --cask podman-desktop
 ln /opt/homebrew/bin/podman /opt/homebrew/bin/docker
 # CLI tool for various operations on container images and image repositories
