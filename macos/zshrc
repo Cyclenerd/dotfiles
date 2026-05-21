@@ -80,9 +80,9 @@ export GEM_HOME="$HOME/.gem"
 export PATH="$PATH:$GEM_HOME/bin"
 export PATH="$PATH:$GEM_HOME/ruby/3.2.0/bin"
 
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/nils/.cache/lm-studio/bin"
-# End of LM Studio CLI section
+# Antigravity CLI and Antigravity IDE
+export PATH="/Users/nils/.local/bin:$PATH"
+export PATH="/Users/nils/.antigravity-ide/antigravity-ide/bin:$PATH"
 
 # Ansible vault password
 export ANSIBLE_VAULT_PASSWORD_FILE="/Users/nils/.ansible/ansible-vault-secret-password"
