@@ -105,6 +105,8 @@ brew install yt-dlp
 # https://rclone.org/
 brew install rclone
 brew install cmake
+# Python
+brew install python
 # Perl
 brew install perl
 PERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib
