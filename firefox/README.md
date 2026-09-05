@@ -37,5 +37,5 @@ copy policies.json C:\Program Files\Mozilla Firefox\distribution\
 
 ## Documentation
 
-- [Customize Firefox using policies.json](https://support.mozilla.org/en-US/kb/customizing-firefox-using-policiesjson)
-- [Firefox policies list](https://mozilla.github.io/policy-templates/)
+- [Customize Firefox using policies.json](https://firefox-admin-docs.mozilla.org/guides/policies-configuration/)
+- [Firefox policies list](https://firefox-admin-docs.mozilla.org/reference/policies/)

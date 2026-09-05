@@ -17,7 +17,7 @@
     "DontCheckDefaultBrowser": true,
     "DNSOverHTTPS": {
       "Enabled":  true,
-      "ProviderURL": "https://extended.dns.mullvad.net/dns-query",
+      "ProviderURL": "https://noads.joindns4.eu/dns-query",
       "Locked": false,
       "ExcludedDomains": ["fritz.box"],
       "Fallback": false
@@ -38,8 +38,14 @@
       "Enabled": false,
       "Chatbot": false,
       "LinkPreviews": false,
-      "Locked": false,
+      "Locked": true,
       "TabGroups": false
+    },
+    "AIControls": {
+      "Default": {
+        "Value": "blocked",
+        "Locked": true
+      }
     },
     "Homepage": {
       "Locked": true,
