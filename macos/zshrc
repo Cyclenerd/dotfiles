@@ -107,6 +107,7 @@ source <(fzf --zsh)
 
 # Use brewed Perl
 eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
+PERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib
 
 # Load .env with API keys
 if [ -f "$HOME/.env" ]; then
