@@ -55,13 +55,18 @@ export PATH="$HOME/go/bin:$PATH"
 
 # Use brewed Ruby
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
+export LDFLAGS="-L/opt/homebrew/opt/ruby/lib $LDFLAGS"
 export CPPFLAGS="-I/opt/homebrew/opt/ruby/include $CPPFLAGS"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
 
 # Use brewed Java
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include $CPPFLAGS"
+
+# Use brewed Node.js
+export PATH="/opt/homebrew/opt/node@24/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/node@24/lib $LDFLAGS"
+export CPPFLAGS="-I/opt/homebrew/opt/node@24/include $CPPFLAGS"
 
 # Use brewed Image Magick
 export PATH="/opt/homebrew/opt/imagemagick-full/bin:$PATH"

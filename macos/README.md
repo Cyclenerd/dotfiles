@@ -119,6 +119,8 @@ brew install php composer
 brew install ruby
 # Java
 brew install openjdk
+# Node.js
+brew install node@24
 # noTunes - prevent iTunes or Apple Music from launching
 # https://github.com/tombonez/noTunes
 # Add to "Open at Login"
