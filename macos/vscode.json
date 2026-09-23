@@ -69,5 +69,6 @@
     },
     "diffEditor.maxComputationTime": 0,
     "terraform.mcp.server.enable": false,
-    "chat.disableAIFeatures": true
+    "chat.disableAIFeatures": true,
+    "workbench.experimental.modernUI": false
 }
